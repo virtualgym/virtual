@@ -1,0 +1,81 @@
+<ul class="nav nav-pills nav-justified ">
+
+  <li class="active"><a href="profile.html">Home</a></li>
+  <li><a href="workout.html">Workouts</a></li>
+  <li><a href="#">Challenges</a></li>
+  <li><a href="#">Chart</a></li>
+  <li><a href="#">Nutrition (PRO)</a></li>
+
+</ul>
+<br>
+  <% flash.each do |key, value| %>
+    <div class="<%= flash_class(key) %>">
+      <%= value %>
+    </div>
+    <br>
+  <% end %>
+
+<div class="row">
+  <div class="col-md-8  col-sm-8  col-xs-12">
+
+
+        <%= videojs_rails id:"example_video_1" ,  sources: { mp4: @exercise.video_url}  %>
+
+  </div>
+  <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title"><strong>Name:</strong><%= @exercise.name %></h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          <strong>Type:</strong>
+          <%= @exercise.part %>
+        </p>
+
+        <p>
+          <strong>Description English:</strong>
+          <%= @exercise.description %>
+        </p>
+
+        <p>
+          <strong>Description Farsi:</strong>
+          <%= @exercise.description_fa %>
+        </p>
+
+        <p>
+          <strong>Level:</strong>
+          <% case @exercise.level %>
+          <% when 0%>
+              <%= "Basic" %>
+          <% when 1%>
+              <%= "Intermediate" %>
+          <% when 2%>
+              <%= "Difficult" %>
+          <% end%>
+        </p>
+
+        <p>
+          <strong>Equipment:</strong>
+          <%= @exercise.equipment.name %>
+        </p>
+
+        <p>
+          <strong>Days per week:</strong>
+          <%= @exercise.days_per_week %>
+        </p>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+  <br>
+  <div class="row">
+
+  </div>
+
+
+<%= link_to 'Edit', edit_exercise_path(@exercise) %> |
+<%= link_to 'Back', exercises_path %>

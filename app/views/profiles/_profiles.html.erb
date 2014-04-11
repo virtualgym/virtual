@@ -1,0 +1,39 @@
+  <div class="table-responsive" >
+    <table class="table table-hover">
+      <thead>
+      <tr>
+        <th>Profile Picture</th>
+        <th>Username</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Birthdate</th>
+        <th>Country</th>
+        <th>City</th>
+        <th>Role</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+
+      <tbody>
+      <% @profiles.each do |profile| %>
+          <tr>
+            <td><%= image_tag profile.avatar.url(:thumb) ,{id: profile.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Profile"}%>
+            <td><%= profile.user.email %></td>
+            <td><%= profile.firstname %></td>
+            <td><%= profile.lastname %></td>
+            <td><%= profile.birthdate %></td>
+            <td><%= profile.country.capitalize %></td>
+            <td><%= profile.city.capitalize %></td>
+            <td><%= profile.role %></td>
+            <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span> Show'), profile %></td>
+            <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span> Edit'), edit_profile_path(profile) %></td>
+            <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Remove'), profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+  <%= will_paginate @profiles, renderer: BootstrapPagination::Rails %>
+
