@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55998305-20e5-44c3-b883-da19edeafacc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/uploads/exercise/video/1/A.mp4" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/plan.rb" afterPath="$PROJECT_DIR$/app/models/plan.rb" />
     </list>
     <ignored path="virtualgym.iws" />
@@ -95,7 +94,7 @@
       <file leaf-file-name="plan.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/plan.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.05050505" vertical-offset="0" max-vertical-offset="594">
+            <state line="2" column="18" selection-start="65" selection-end="95" vertical-scroll-proportion="0.05050505" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
@@ -1334,7 +1333,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/plan.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.05050505" vertical-offset="0" max-vertical-offset="594">
+        <state line="2" column="18" selection-start="65" selection-end="95" vertical-scroll-proportion="0.05050505" vertical-offset="0" max-vertical-offset="594">
           <folding />
         </state>
       </provider>
