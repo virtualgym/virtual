@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410222411) do
+ActiveRecord::Schema.define(version: 20140412130704) do
 
   create_table "amount_types", force: true do |t|
     t.string   "name"
@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(version: 20140410222411) do
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
+    t.string   "language"
   end
 
   create_table "taking_food_plans", force: true do |t|

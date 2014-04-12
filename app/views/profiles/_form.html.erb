@@ -121,6 +121,17 @@
       </div>
     </div>
     <br>
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-sx-10">
+        <div class="form-group">
+          <%= f.label :language ,:class => 'col-sm-4 control-label'%>
+          <div class="col-sm-8">
+            <%= f.select :language , [['English','en'],['فارسی','fa']] ,{}, {:class => 'form-control' } %>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
     <div class="form-group row">
       <!--<button type="submit" class="btn btn-primary"> Let's Go <span class="glyphicon glyphicon-chevron-right"></span></button>-->
       <% if :is_edit%>
