@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails virtualgym: development" uuid="bb690a8a-635e-431d-917f-84d6f2a7e545">
+  <data-source source="LOCAL" name="Rails virtualgym: development" uuid="118a7771-0194-403b-87b7-23f962b96c9a">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
-  <data-source source="LOCAL" name="Rails virtualgym: test" uuid="fb67c028-c10f-476d-9e9e-ceac2fdc24ce">
+  <data-source source="LOCAL" name="Rails virtualgym: test" uuid="215dfe6a-cf5c-44fa-bbe8-391b1c9d2e44">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
-  <data-source source="LOCAL" name="Rails virtualgym: production" uuid="a418cb08-58ae-470c-b50d-569a1ed67a1d">
+  <data-source source="LOCAL" name="Rails virtualgym: production" uuid="69ec2d29-14f7-4f46-9395-3692cc2a4fdd">
     <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
