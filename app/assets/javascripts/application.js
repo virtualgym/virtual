@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require twitter/bootstrap
-//= require turbolinks
+//= #require turbolinks
 // = require aladin
 //= require workouts.js
 //= require_directory .
