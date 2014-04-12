@@ -20,4 +20,49 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  profile:
+    age: "Age"
+    height: "Height"
+    weight: "weight"
+    country: "Country"
+    city: "city"
+    totalCal: "Total Calory"
+    totalTime: "Total Time"
+    level: "Level"
+    totalDistance: "Total Distance"
+    home: "Home"
+    workOuts: "Workouts"
+    challenges: "Challenges"
+    Chart: "Chart"
+    nutrition: "Nutrition (pro)"
+    excersice: "Excersice"
+    challenge: "Challenge"
+    bodymetric: "Body metric"
+    becomepro: "Become Pro"
+    editprofile: "Edit Profile"
+    logout: "Logout"
+    firstname: "First Name"
+    lastname: "Last Name"
+    profpic: " Profile Picture"
+    coverpic: "Cover Picture"
+    birthdate: "BirthDate"
+    height: "Height"
+    heightplace: "Height (cm)"
+    weight: "weight"
+    weightplace: "weight (kg)"
+    country: "Country"
+    city: "City"
+    edit: "edit"
+    go: "Go"
+    role: "Role"
+    show: "Show"
+    edit: "Edit"
+    remove: "Remove"
+    removequest: "Are you sure?"
+    enterplace: "Enter User"
+    search: "Search"
+
+
+
+
+
