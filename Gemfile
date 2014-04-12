@@ -37,7 +37,6 @@ end
 
 gem "paperclip", "~> 4.1"
 gem 'rmagick', '2.13.2'
-#----
 gem 'will_paginate', '~> 3.0'
 gem 'will_paginate-bootstrap'
 

@@ -16,4 +16,5 @@
 // = require aladin
 //= require workouts.js
 //= require_directory .
+//= require jquery_ujs
 

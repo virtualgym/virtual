@@ -24,9 +24,9 @@ VirtualGym::Application.routes.draw do
 
   resources :foods
 
-  resources :exercises
+  resource :users
 
-  resources :users
+  resources :exercises
 
   resources :workouts
 

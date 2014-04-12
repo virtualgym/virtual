@@ -10,7 +10,9 @@
  *
 
  *= require_self
+
 *= require twitter/bootstrap
+*= require ./All/custom-profile-master
 *= require_tree ./All
 
 
