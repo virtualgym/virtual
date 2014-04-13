@@ -31,11 +31,11 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-7 col-sm-7 col-sx-10">
         <div class="form-group">
-            <%= f.label :date ,:class => 'col-sm-4 control-label'%>
-            <div class="col-sm-8">
-                <%= f.date_select :date ,{:prompt => { :day => 'dd', :month => 'mm', :year => 'yyyy' }},:class => 'col-md-2 col-sm-2 col-sx-10 form-control '%>
+            <%= f.label :date ,:class => 'col-sm-3 control-label'%>
+            <div class="col-sm-9">
+              <%= f.date_select :date , {:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' },:start_year => Time.now.year-70, :end_year => Time.now.year}, {:class => 'date-select'}  %>
             </div>
         </div>
       </div>

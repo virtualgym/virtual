@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
-    @profiles = Profile.search(params[:search]).paginate(:page => params[:page], :per_page => 3)
+    @profiles = Profile.search(params[:search]).paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /profiles/1
