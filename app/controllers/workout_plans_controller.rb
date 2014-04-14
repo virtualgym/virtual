@@ -17,6 +17,9 @@ class WorkoutPlansController < ApplicationController
     @workout_plan = WorkoutPlan.new
   end
 
+  def addExercise
+  end
+
   # GET /workout_plans/1/edit
   def edit
   end
