@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 4.0.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
+gem 'libv8'#,'~> 3.11.8.17'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
@@ -35,14 +36,13 @@ group :doc do
 
 end
 
-gem "paperclip", "~> 4.1"
-gem 'rmagick', '2.13.2'
+gem "paperclip", '~> 3.5.1'#:git => "git://github.com/thoughtbot/paperclip.git"#gem 'rmagick', '2.13.2'
 #----
-gem 'will_paginate', '~> 3.0'
-gem 'will_paginate-bootstrap'
+#gem 'will_paginate', '~> 3.0'
+#gem 'will_paginate-bootstrap'
 
-gem 'videojs_rails'
-gem 'carrierwave'
+#gem 'videojs_rails'
+#gem 'carrierwave'
 
 
 # Use ActiveModel has_secure_password

@@ -25,7 +25,7 @@
         <td><%= plan.total_fat %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span>Show'), plan %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>Edit'), edit_plan_path(plan) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Remove'), plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 
       </tr>
     <% end %>

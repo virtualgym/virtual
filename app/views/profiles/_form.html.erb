@@ -16,7 +16,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :firstname ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t 'profile.firstname' ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.text_field :firstname ,:class => 'form-control ', :placeholder => 'Firstname'%>
           </div>
@@ -27,7 +27,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :lastname ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t 'profile.lastname' ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.text_field :lastname ,:class => 'form-control ', :placeholder => 'Lastname'%>
           </div>
@@ -38,7 +38,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :Profile_Picture ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t 'profile.Profile_Picture' ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.file_field :avatar %>
 

@@ -1,0 +1,128 @@
+en:
+
+  profile:
+
+    direction: ""
+    pull: ""
+    age: "سن"
+    height: "قد"
+    weight: "وزن"
+    country: "کشور"
+    city: "شهر"
+    totalcal: "کالری"
+    totalTime: "زمان کل"
+    level: "سطح"
+    totalDistance: "مسافت کل"
+    home: "خانه"
+    workOuts: "ورزش ها"
+    challenges: "رقابت"
+    Chart: "نمودار"
+    nutrition: "برنامه ی غذایی ( حرفه ای )"
+    excercise: "حرکات"
+    bodymetric: "متریک بدن"
+    becomepro: "حرفه ای شوید"
+    editprofile: "ویرایش پروفایل"
+    logout: "خروج"
+    firstname: "نام"
+    lastname: "نام خانوادگی"
+    profpic: " عکس پروفایل"
+    coverpic: "عکس کاور"
+    birthdate: "تاریخ تولد"
+    heightplace: "قد(سانتی متر)"
+    weightplace: "وزن(کیلوگرم)"
+    edit: "ویرایش"
+    go: "برو"
+    role: "نقش"
+    show: "نمایش"
+    remove: "حذف"
+    removequest: "آیا مطمئنید؟"
+    enterplace: "کاربر را وارد کنید"
+    search: "جستجو"
+    listprof: "فهرست پروفایل ها"
+    newprof: "پروفایل جدید"
+
+   plans:
+    totprotein: "پروتیین کل"
+    totalcarb: "کربوهیدرات کل"
+    totalfat: "چربی کل"
+    editplan: " ویرایش برنامه"
+    create: "ایجاد"
+    listplan: "فهرست برنامه ها"
+    newplan: "برنامه ی جدید"
+    back: "بازگشت"
+
+  workout_plans:
+
+    name: "نام"
+    workout_plan_error: "امکان ذخیره ی این برنامه ی ورزشی وجود ندارد."
+    workout_title: "عنوان تمرین ورزشی"
+    list_workout: "فهرست برنامه های ورزشی"
+    new_workout: "برنامه ی ورزشی جدید"
+    workout-err: "امکان ذخیره ی این ورزش وجود ندارد."
+    user_id: "شناسه ی کاربری"
+    workout_plan_id: "شناسه ی برنامه ی ورزشی"
+    date: "تاریخ"
+    dateplace: "مجموع دقایق"
+
+    workout:
+
+    editing_workouts: "ویرایش ورزش ها"
+    new_workout: "ورزش جدید"
+
+    amounttypes:
+
+    amounterror: "امکان ذخیره ی این واحد وجود ندارد."
+    editamount: "ویرایش واحد"
+    listamount: "فهرست واحدها"
+    newamount: "واحد جدید"
+    amount_id: "شناسه ی واحد"
+    manage_amount: "مدیریت واحدها"
+
+    equipment:
+
+    equip_error: "امکان ذخیره ی این تجهیزات وجود ندارد."
+    editequip: "ویرایش تجهیزات"
+    listequip: "فهرست تجهیزات"
+    newequip: "تجهیزات جدید"
+    equip: "تجهیزات"
+
+    exercises:
+
+     ex_error: "امکان ذخیره ی این حرکت وجود ندارد."
+     part: "عضو بدن"
+     abs: "شکم"
+     chest: "سینه"
+     bback: "Back"
+     leg: "پا"
+     arms: "بازو"
+     dpw: "روز در هفته"
+     begin: "مقدماتی"
+     inter: "متوسط"
+     diff: "دشوار"
+     equipid: "شناسه ی تجهیزات"
+     descp: "شرح انگلیسی"
+     descp_fa: "شرح فارسی"
+     vid_link: "لینک ویدیو"
+     avatar: "نماد"
+     ex_edit: "تدوین حرکات"
+     ex_list: "فهرست حرکات"
+     new_ex: "حرکت جدید"
+
+
+     Food:
+
+     food_err: "امکان ذخیره ی این غذا وجود ندارد. "
+     per: "در هر"
+     protein: "پروتیین"
+     carb: "کربوهیدرات"
+     cal: "کالری"
+     fat: "چربی"
+     pic: "تصویر"
+     edit_food: "ویرایش غذاها"
+     food_list: "فهرست غذاها"
+     new_food: "غذای جدید"
+
+
+     layouts:
+
+

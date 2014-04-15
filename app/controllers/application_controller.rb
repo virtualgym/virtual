@@ -13,5 +13,13 @@ class ApplicationController < ActionController::Base
     else
       "/profiles/#{resource.profile_id}"
     end
+
+    before_filter :set_user_language
+
+    private
+
+    def set_user_language
+      i18n.locale = current_user.language if logged_in?
   end
+
 end
