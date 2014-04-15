@@ -31,13 +31,13 @@ en:
     country: "Country"
     city: "City"
     totalcal: "Total Calories"
-    totalTime: "Total Time"
+    totaltime: "Total Time"
     level: "Level"
     totalDistance: "Total Distance"
     home: "Home"
-    workOuts: "Workouts"
+    workouts: "Workouts"
     challenges: "Challenges"
-    Chart: "Chart"
+    chart: "Chart"
     nutrition: "Nutrition (pro)"
     excercise: "Exercise"
     bodymetric: "Body metric"
@@ -61,10 +61,9 @@ en:
     search: "Search"
     listprof: "Listing Profiles"
     newprof: "New Profile"
+    proferror: "prohibited this profile from being saved:"
 
-   plans:
-
-    totprotein: "Total protein"
+    totalprotein: "Total protein"
     totalcarb: "Total carbohydrate"
     totalfat: "Total fat"
     editplan: " Editing plan"
@@ -73,7 +72,7 @@ en:
     newplan: "New Plan"
     back: "Back"
 
-  workout_plans:
+
 
     name: "Name"
     workout_plan_error: "Prohibited this workout_plan from being saved"
@@ -86,12 +85,12 @@ en:
     date: "Date"
     dateplace: "Total minutes"
 
-    workout:
+
 
     editing_workouts: "Editing Workout"
     new_workout: "New Workout"
 
-    amounttypes:
+
 
     amounterror: "Prohibited this amount_type from being saved"
     editamount: "Editing amount type"
@@ -100,7 +99,7 @@ en:
     amount_id: "Amount type ID"
     manage_amount: "Manage amount type"
 
-    equipment:
+
 
     equip_error: "Prohibited this equipment from being saved"
     editequip: "Editing equipment"
@@ -108,17 +107,17 @@ en:
     newequip: "New equipment"
     equip: "Equipment"
 
-    exercises:
 
-     ex_error: "Prohibited this exercise from being saved"
-     part: "Part"
-     abs: "ABS"
-     chest: "Chest"
-     back: "Back"
-     leg: "Legs"
-     arms: "Arms"
-     dpw: "Days Per Week"
-     begin: "Beginner"
+
+     1ex_error: "Prohibited this exercise from being saved"
+     1part: "Part"
+     1abs: "ABS"
+     1chest: "Chest"
+     1back: "Back"
+     1legs: "Legs"
+     1arms: "Arms"
+     1dpw: "Days Per Week"
+     basic: "Basic"
      inter: "Intermediate"
      diff: "Difficult"
      equipid: "Equipment ID"
@@ -131,7 +130,7 @@ en:
      new_ex: "New exercise"
 
 
-     Food:
+
 
      food_err: "Prohibited this food from being saved"
      per: "Per"
@@ -145,7 +144,7 @@ en:
      new_food: "New food"
 
 
-     layouts:
+
 
 
 

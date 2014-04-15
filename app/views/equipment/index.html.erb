@@ -1,4 +1,4 @@
-<h1>Listing equipment</h1><br>
+<h1>t('profile.listequip')</h1><br>
 <%= link_to raw('<span class="glyphicon glyphicon-plus"></span> New'), new_equipment_path ,:class => "btn btn-info"%><br><br>
 
 
@@ -19,7 +19,7 @@
         <td><%= equipment.name %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span>Show'), equipment %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>Edit'), edit_equipment_path(equipment) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), equipment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), equipment, method: :delete, data: { confirm: t('profile. removequest') } %></td>
       </tr>
     <% end %>
   </tbody>

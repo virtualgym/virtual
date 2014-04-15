@@ -2,8 +2,8 @@ en:
 
   profile:
 
-    direction: ""
-    pull: ""
+    direction: "style='direction: rtl'"
+    pull: "pull-right"
     age: "سن"
     height: "قد"
     weight: "وزن"
@@ -40,7 +40,7 @@ en:
     search: "جستجو"
     listprof: "فهرست پروفایل ها"
     newprof: "پروفایل جدید"
-
+    proferror: "امکان ذخیره ی این پروفایل وجود ندارد.؛
    plans:
     totprotein: "پروتیین کل"
     totalcarb: "کربوهیدرات کل"

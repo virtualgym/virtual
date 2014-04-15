@@ -1,7 +1,7 @@
 <%= form_for(@exercise) do |f| %>
   <% if @exercise.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@exercise.errors.count, "error") %> prohibited this exercise from being saved:</h2>
+      <h2><%= pluralize(@exercise.errors.count, "error") %> t('profile.ex_error') </h2>
 
       <ul>
       <% @exercise.errors.full_messages.each do |msg| %>
@@ -30,9 +30,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :part ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t(profile.part') ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.select :part, ["ABS" , "Chest" , "Back" , "Legs" , "Arms"] ,{}, {:class => 'form-control'}%>
+            <%= f.select :part, [t ('profile.abs') , t ('profile.chest') , t('profile.back') , t('profile.legs') , t('profile.arms')] ,{}, {:class => 'form-control'}%>
           </div>
         </div>
       </div>
@@ -42,7 +42,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :days_per_week ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t ('profile.dpw') ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-7">
             <%= f.number_field :days_per_week ,:class => 'form-control ', :placeholder => 'Days Per Week'%>
           </div>
@@ -56,7 +56,7 @@
         <div class="form-group">
           <%= f.label :level ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-              <%= f.select :level, ["Beginner" , "Intermediate" , "Difficult"] ,{}, {:class => 'form-control'}%>
+              <%= f.select :level, ["Basic" , "Intermediate" , "Difficult"] ,{}, {:class => 'form-control'}%>
             </div>
           </div>
         </div>

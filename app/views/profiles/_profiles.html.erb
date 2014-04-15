@@ -26,10 +26,10 @@
             <td><%= profile.birthdate %></td>
             <td><%= profile.country.capitalize %></td>
             <td><%= profile.city.capitalize %></td>
-            <td><%= profile.role %></td>
+            <td><%= t('profile.role') %></td>
             <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span> Show'), profile %></td>
             <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span> Edit'), edit_profile_path(profile) %></td>
-            <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Remove'), profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Remove'), profile, method: :delete, data: { confirm: t('profile. removequest')} %></td>
           </tr>
       <% end %>
       </tbody>
