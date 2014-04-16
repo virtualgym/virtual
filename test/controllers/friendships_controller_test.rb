@@ -8,7 +8,7 @@ class FriendshipsControllerTest < ActionController::TestCase
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:friendships)
+    assert_not_nil assigns(:friends)
   end
 
   test "should get new" do

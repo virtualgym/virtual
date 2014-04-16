@@ -67,6 +67,7 @@ class ProfilesController < ApplicationController
   end
   def add_friend
     @profiles = Profile.search_friend(params[:search]).paginate(:page => params[:page], :per_page => 10)
+    @friendships = current_user.friendships.paginate(:page => params[:friended_page], :per_page => 10)
   end
 
   private

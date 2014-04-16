@@ -59,7 +59,14 @@
     <% else %>
         <ul class="nav nav-pills nav-justified ">
 
-          <li class="active"><%= link_to "Friend Request", friendships_path(:friend_id => @profile.user) , method: :post %></li>
+          <li class="active">
+            <%=
+                unless (current_user.friends.include? @profile.user)
+                  link_to 'Friend Request', friendships_path(:friend_id => @profile.user) , method: :post
+                else
+                  link_to 'Remove Friend', @profile, method: :delete, data: { confirm: 'Are you sure?' }
+                end
+            %></li>
           <li ><a href="#">Private Message</a></li>
 
         </ul>

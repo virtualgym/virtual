@@ -5,6 +5,7 @@ class FriendshipsController < ApplicationController
 
     respond_to do |format|
       if @friendship.save
+        Friendship.create(user_id: params[:friend_id],friend_id: current_user.id)
         format.html { redirect_to profiles_add_friend_path, notice: 'Added Friend.' }
       else
         format.html { redirect_to profiles_add_friend_path, error: 'Unable to add friend.' }
@@ -14,6 +15,11 @@ class FriendshipsController < ApplicationController
 
   def destroy
     @friendship = current_user.friendships.find(params[:id])
+    conditions = { user_id: @friendship.friend_id,
+                   friend_id: current_user }
+    @inverse = Friendship.find(:first , :conditions => conditions)
+    @inverse.destroy()
+    @inverse.destroy
     @friendship.destroy
     respond_to do |format|
       format.html { redirect_to profiles_add_friend_path }

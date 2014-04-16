@@ -17,11 +17,13 @@ class Profile < ActiveRecord::Base
   end
 
   def self.search_friend(search)
-    if search
+    if ! search.blank?
       where( 'firstname LIKE ? OR lastname LIKE ? ', "%#{search}%","%#{search}%")
     else
       where(' 1=0')
     end
   end
+
+
 
 end
