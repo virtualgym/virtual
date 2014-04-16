@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :authenticate_user!
+  before_action :set_user_language
 
   def after_sign_in_path_for(resource)
     unless resource.profile_id
@@ -10,5 +11,11 @@ class ApplicationController < ActionController::Base
     else
       "/profiles/#{resource.profile_id}"
     end
+  end
+
+  private
+
+  def set_user_language
+    I18n.locale = current_user.profile.language if user_signed_in?
   end
 end

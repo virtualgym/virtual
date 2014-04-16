@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140412144217) do
+ActiveRecord::Schema.define(version: 20140414181756) do
 
   create_table "amount_types", force: true do |t|
     t.string   "name"
@@ -75,6 +75,13 @@ ActiveRecord::Schema.define(version: 20140412144217) do
   end
 
   add_index "foods_plans", ["plan_id", "food_id"], name: "index_foods_plans_on_plan_id_and_food_id", using: :btree
+
+  create_table "friendships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "friend_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "plans", force: true do |t|
     t.integer  "total_cal"

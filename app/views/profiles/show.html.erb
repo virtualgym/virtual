@@ -26,7 +26,7 @@
     <div class="col-md-3 col-sm-3  col-xs-12 infoDiv">
       <h3> <%= "#{@profile.firstname} #{@profile.lastname}" %> </h3>
       <ul>
-        <li><span class="glyphicon glyphicon-star">  </span> Age : <%= age(@profile.birthdate) %></li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= t('profile.age')%> : <%= age(@profile.birthdate) %></li>
         <li><span class="glyphicon glyphicon-star">  </span> Height : <%= @profile.height %></li>
         <li><span class="glyphicon glyphicon-star">  </span> weight : <%= @profile.weight %></li>
         <li><span class="glyphicon glyphicon-star">  </span> Country : <%= @profile.country.capitalize %></li>
@@ -45,7 +45,7 @@
   </div>
 
   <div class="row">
-
+    <% if current_user.profile_id == @profile.id %>
     <ul class="nav nav-pills nav-justified ">
 
       <li class="active"><a href="profile.html">Home</a></li>
@@ -53,7 +53,16 @@
       <li><a href="#">Challenges</a></li>
       <li><a href="#">Chart</a></li>
       <li><a href="#">Nutrition (PRO)</a></li>
+      <li><%= link_to  "Friends" , profiles_add_friend_path %></li>
 
     </ul>
+    <% else %>
+        <ul class="nav nav-pills nav-justified ">
+
+          <li class="active"><%= link_to "Friend Request", friendships_path(:friend_id => @profile.user) , method: :post %></li>
+          <li ><a href="#">Private Message</a></li>
+
+        </ul>
+    <% end%>
   </div>
 

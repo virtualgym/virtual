@@ -15,4 +15,13 @@ class Profile < ActiveRecord::Base
       scoped
     end
   end
+
+  def self.search_friend(search)
+    if search
+      where( 'firstname LIKE ? OR lastname LIKE ? ', "%#{search}%","%#{search}%")
+    else
+      where(' 1=0')
+    end
+  end
+
 end

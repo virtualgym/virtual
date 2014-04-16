@@ -1,6 +1,7 @@
 class WorkoutPlansController < ApplicationController
   before_action :set_workout_plan, only: [:show, :edit, :update, :destroy]
 
+  layout "admin"
   # GET /workout_plans
   # GET /workout_plans.json
   def index
@@ -17,7 +18,8 @@ class WorkoutPlansController < ApplicationController
     @workout_plan = WorkoutPlan.new
   end
 
-  def addExercise
+  def add_exercise
+    @exercises = Exercise.all
   end
 
   # GET /workout_plans/1/edit

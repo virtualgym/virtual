@@ -65,6 +65,9 @@ class ProfilesController < ApplicationController
       format.json { head :no_content }
     end
   end
+  def add_friend
+    @profiles = Profile.search_friend(params[:search]).paginate(:page => params[:page], :per_page => 10)
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -74,6 +77,6 @@ class ProfilesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def profile_params
-      params.require(:profile).permit(:firstname, :lastname, :birthdate, :height, :weight, :country, :city, :role,:avatar,:cover)
+      params.require(:profile).permit(:firstname, :lastname, :birthdate, :height, :weight, :country, :city, :role,:avatar,:cover ,:language)
     end
 end

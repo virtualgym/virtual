@@ -1,6 +1,12 @@
 VirtualGym::Application.routes.draw do
 
 
+  #-- Workout Plan
+  get "workout_plans/add_exercise"
+
+  #-- Profile
+  get "/profiles/add_friend"
+
   resources :workout_plans
 
     authenticated :user do
@@ -16,7 +22,7 @@ VirtualGym::Application.routes.draw do
 
   devise_for :users
 
-
+  resources :friendships
 
   resources :amount_types
 
