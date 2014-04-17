@@ -50,19 +50,20 @@ en:
     listplan: "فهرست برنامه ها"
     newplan: "برنامه ی جدید"
     back: "بازگشت"
+    plan_err: "امکان ذخیره ی این برنامه وجود ندارد."
 
   workout_plans:
 
     name: "نام"
     workout_plan_error: "امکان ذخیره ی این برنامه ی ورزشی وجود ندارد."
-    workout_title: "عنوان تمرین ورزشی"
+    workout_edit: "تدوین تمرین ورزشی"
     list_workout: "فهرست برنامه های ورزشی"
     new_workout: "برنامه ی ورزشی جدید"
     workout-err: "امکان ذخیره ی این ورزش وجود ندارد."
     user_id: "شناسه ی کاربری"
     workout_plan_id: "شناسه ی برنامه ی ورزشی"
     date: "تاریخ"
-    dateplace: "مجموع دقایق"
+    totalmin: "مجموع دقایق"
 
     workout:
 

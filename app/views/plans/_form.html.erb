@@ -1,7 +1,7 @@
 <%= form_for(@plan, :html => { :class => 'form-horizontal' , :role => "form" }) do |f| %>
   <% if @plan.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@plan.errors.count, "error") %> prohibited this plan from being saved:</h2>
+      <h2><%= pluralize(@plan.errors.count, "error") %> t('profile.plan_err')</h2>
 
       <ul>
       <% @plan.errors.full_messages.each do |msg| %>
@@ -26,7 +26,7 @@
         <div class="form-group">
           <%= f.label t('profile.totalprotein') ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.text_field :total_protein ,:class => 'form-control ', :placeholder => 'Total Protein'%>
+            <%= f.text_field :total_protein ,:class => 'form-control ', :placeholder => t('profile.totalprotein')%>
           </div>
         </div>
       </div>
@@ -36,7 +36,7 @@
         <div class="form-group">
             <%= f.label t('profile.totalcarb') ,:class => 'col-sm-4 control-label' %>
             <div class="col-sm-8">
-                <%= f.text_field :total_carbohydrate ,:class => 'form-control ', :placeholder => 'Total Carbohydrate'%>
+                <%= f.text_field :total_carbohydrate ,:class => 'form-control ', :placeholder => t('profile.totalcarb')%>
             </div>
         </div>
       </div>
@@ -46,7 +46,7 @@
         <div class="form-group">
             <%= f.label t('profile.totalfat') ,:class => 'col-sm-4 control-label' %>
             <div class="col-sm-8">
-                <%= f.text_field :total_fat ,:class => 'form-control ' , :placeholder => 'Total Fat'%>
+                <%= f.text_field :total_fat ,:class => 'form-control ' , :placeholder =>t('profile.totalfat')%>
             </div>
         </div>
       </div>

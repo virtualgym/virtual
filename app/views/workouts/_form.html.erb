@@ -1,7 +1,7 @@
 <%= form_for(@workout, :html => { :class => 'form-horizontal' , :role => "form" }) do |f| %>
   <% if @workout.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@workout.errors.count, "error") %> prohibited this workout from being saved:</h2>
+      <h2><%= pluralize(@workout.errors.count, "error") %> t('profile.workout_err'):</h2>
 
       <ul>
       <% @workout.errors.full_messages.each do |msg| %>
@@ -13,9 +13,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-            <%= f.label :user_id ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.user_id') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.text_field :user_id ,:class => 'form-control ' , :placeholder => 'User ID'%>
+                <%= f.text_field :user_id ,:class => 'form-control ' , :placeholder => t('profile.user_id')%>
             </div>
         </div>
       </div>
@@ -23,9 +23,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-            <%= f.label :workout_plan_id ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.workout_plan_id') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.text_field :workout_plan_id ,:class => 'form-control ' , :placeholder => 'Workout Plan ID'%>
+                <%= f.text_field :workout_plan_id ,:class => 'form-control ' , :placeholder => t('profile.workout_plan_id')%>
             </div>
         </div>
       </div>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-            <%= f.label :date ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.date') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
                 <%= f.date_select :date ,{:prompt => { :day => 'dd', :month => 'mm', :year => 'yyyy' }},:class => 'col-md-2 col-sm-2 col-sx-10 form-control '%>
             </div>
@@ -43,9 +43,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-            <%= f.label :total_min ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.totalmin') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.time_select :total_min ,:class => '' , :placeholder => 'Total Minutes'%>
+                <%= f.time_select :total_min ,:class => '' , :placeholder => t('profile.totalmin')%>
             </div>
         </div>
       </div>
@@ -53,9 +53,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-            <%= f.label :total_cal ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.totalcal') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.number_field :total_cal ,:class => 'form-control ' , :placeholder => 'Total calories'%>
+                <%= f.number_field :total_cal ,:class => 'form-control ' , :placeholder => t('profile.totalcal')%>
             </div>
         </div>
       </div>

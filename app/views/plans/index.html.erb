@@ -1,4 +1,4 @@
-<h1>Listing plans</h1><br>
+<h1>t('profile.listplan')</h1><br>
 <%= link_to raw('<span class="glyphicon glyphicon-plus"></span> New'), new_plan_path ,:class => "btn btn-info"%><br><br>
 
 
@@ -25,7 +25,7 @@
         <td><%= plan.total_fat %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span>Show'), plan %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>Edit'), edit_plan_path(plan) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Remove'), plan, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Remove'), plan, method: :delete, data: { confirm: t('profile.removequest') } %></td>
 
       </tr>
     <% end %>

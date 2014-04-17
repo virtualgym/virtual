@@ -1,4 +1,4 @@
-<h1>Listing exercises</h1><br>
+<h1>t ('profile.ex_list') </h1><br>
 <%= link_to raw('<span class="glyphicon glyphicon-plus"></span>'), new_exercise_path ,:class => "btn btn-primary" , :style => "color: rgb(255,255,255);"%><br><br>
 <br>
 <div class="table-responsive">
@@ -26,18 +26,18 @@
         <td>
             <% case exercise.level %>
                 <% when 0%>
-            <%= "Basic" %>
+            <%=t('profile.basic') %>
                 <% when 1%>
-            <%= "Intermediate" %>
+            <%= t('profile.inter') %>
                 <% when 2%>
-            <%= "Difficult" %>
+            <%= t('profile.diff') %>
             <% end%>
         </td>
         <td><%= exercise.equipment.name.capitalize %></td>
         <td><%= exercise.days_per_week %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span> Show'), exercise %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span> Edit'), edit_exercise_path(exercise) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Destroy'), exercise, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Destroy'), exercise, method: :delete, data: { confirm: t('profile.removequest') } %></td>
       </tr>
     <% end %>
   </tbody>

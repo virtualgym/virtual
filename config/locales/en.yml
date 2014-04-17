@@ -71,19 +71,20 @@ en:
     listplan: "Listing Plans"
     newplan: "New Plan"
     back: "Back"
+    plan_err: "prohibited this plan from being saved:"
 
 
 
     name: "Name"
     workout_plan_error: "Prohibited this workout_plan from being saved"
-    workout_title: "Editing Workout plan"
+    workout_edit: "Editing Workout plan"
     list_workout: "Listing workout plans"
     new_workout: "New Workout Plan"
     workout-err: "Prohibited this workout from being saved"
     user_id: "User ID"
     workout_plan_id: "Workout Plan ID"
     date: "Date"
-    dateplace: "Total minutes"
+    totalmin: "Total minutes"
 
 
 
@@ -109,20 +110,20 @@ en:
 
 
 
-     1ex_error: "Prohibited this exercise from being saved"
-     1part: "Part"
-     1abs: "ABS"
-     1chest: "Chest"
-     1back: "Back"
-     1legs: "Legs"
-     1arms: "Arms"
-     1dpw: "Days Per Week"
+     ex_error: "Prohibited this exercise from being saved"
+     part: "Part"
+     abs: "ABS"
+     chest: "Chest"
+     back: "Back"
+     legs: "Legs"
+     arms: "Arms"
+     dpw: "Days Per Week"
      basic: "Basic"
      inter: "Intermediate"
      diff: "Difficult"
      equipid: "Equipment ID"
      descp: "English Description"
-     descp_fa: "Farsi Description"
+     descp_fa: "توضیح فارسی"
      vid_link: "Video link"
      avatar: "Ava"
      ex_edit: "Editing exercise"
