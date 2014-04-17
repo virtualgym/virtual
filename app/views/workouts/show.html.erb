@@ -1,0 +1,82 @@
+
+
+<div class="row">
+  <ul class="nav nav-pills nav-justified ">
+
+    <li><%=  link_to "Home", controller: "profiles", action: "show", id: current_user.profile_id %></li>
+    <li class="active"><a href="#">Workouts</a></li>
+    <li><a href="#">Challenges</a></li>
+    <li><a href="#">Chart</a></li>
+    <li><a href="#">Nutrition (PRO)</a></li>
+
+  </ul>
+  <br>
+  <% flash.each do |key, value| %>
+      <div class="<%= flash_class(key) %>">
+        <%= value %>
+      </div>
+      <br>
+  <% end %>
+</div>
+<script type="text/javascript">
+    var clock;
+
+    $(document).ready(function() {
+        var clock;
+
+        clock = $('.clock').FlipClock(10, {
+            clockFace: 'MinuteCounter',
+            countdown: true,
+            autoStart: false,
+            callbacks: {
+                stop: function() {
+                    alert('stop');
+                },
+                start: function() {
+                    $('.message').html('The clock has started!');
+                },
+                reset: function() {
+                    $('.message').html('The clock has reset!');
+                }
+            }
+
+        });
+
+        $(document).on('click','#stop', function () {
+            clock.stop();
+        });
+        $(document).on('click','#start', function () {
+            clock.start();
+        });
+        $(document).on('click','#reset', function () {
+            clock.stop();
+            clock.setTime(90);
+        });
+    });
+
+</script>
+
+<div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="clock" style="margin:2em;"></div>
+    <div class="message"></div>
+    <a href="#" id="start">start</a><br>
+    <a href="#" id="stop">stop</a><br>
+    <a href="#" id="reset">reset</a><br>
+  </div>
+  <div class="col-md-8  col-sm-8  col-xs-12">
+    <div style="display:none;" class="html5gallery" data-responsive="true" data-skin="showcase" data-width="480" data-height="272">
+      <!-- Add videos to Gallery -->
+      <%= link_to (image_tag "http://cdn.cutestpaw.com/wp-content/uploads/2011/11/cute-cat-l.jpg" , alt: "Big Buck Bunny, Copyright Blender Foundation"), "/uploads/exercise/video/1/A.mp4"%>
+      <%= link_to (image_tag "http://cdn.cutestpaw.com/wp-content/uploads/2011/11/cute-cat-l.jpg" , alt: "Big Buck Bunny, Copyright Blender Foundation"), "/uploads/exercise/video/1/A.mp4"%>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
