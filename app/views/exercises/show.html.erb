@@ -1,7 +1,7 @@
 <ul class="nav nav-pills nav-justified ">
 
-  <li class="active"><a href="profile.html">Home</a></li>
-  <li><a href="workout.html">Workouts</a></li>
+  <li><%=  link_to "Home", controller: "profiles", action: "show", id: current_user.profile_id %></li>
+  <li><a href="#">Workouts</a></li>
   <li><a href="#">Challenges</a></li>
   <li><a href="#">Chart</a></li>
   <li><a href="#">Nutrition (PRO)</a></li>

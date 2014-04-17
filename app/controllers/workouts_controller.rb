@@ -27,7 +27,8 @@ class WorkoutsController < ApplicationController
   # POST /workouts.json
   def create
     @workout = Workout.new(workout_params)
-
+    @workout.user_id = current_user.id
+    @workout.date = Time.now
     respond_to do |format|
       if @workout.save
         format.html { redirect_to @workout, notice: 'Workout was successfully created.' }
@@ -71,6 +72,6 @@ class WorkoutsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def workout_params
-      params.require(:workout).permit(:user_id, :workout_plan_id, :date, :total_min, :total_cal)
+      params.require(:workout).permit( :workout_plan_id, :total_min, :total_cal)
     end
 end

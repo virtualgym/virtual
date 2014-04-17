@@ -1,3 +1,4 @@
+
 <div class="row">
   <div class="col-md-2 col-sm-2">
     <ul class="nav nav-pills nav-stacked">
@@ -12,7 +13,6 @@
     <div class="row">
       <div id="video-container">
         <!--Video of Exercise will be placed here!-->
-        <%= video_tag('A.mp4', :poster => 'Prof.jpg',:class => "img-responsive",:size => '550x280', :id => 'video') %>
 
         <!-- Video Controls -->
                 <span id="video-controls" >
@@ -163,5 +163,4 @@
 </p>
 %>-->
 <%= link_to 'Edit', edit_workout_path(@workout) %> |
-<%= link_to 'Back', workouts_path %>
-
+<%= link_to 'Back', workouts_path %>-->

@@ -25,9 +25,9 @@
         <td><%= workout.date %></td>
         <td><%= workout.total_min %></td>
         <td><%= workout.total_cal %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span>Show'), workout %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>Edit'),  edit_workout_path(workout) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), workout, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span> Show'), workout ,class: 'btn-link'%></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span> Edit'),  edit_workout_path(workout),class: 'btn-link' %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Remove'), workout, method: :delete, data: { confirm: 'Are you sure?'} ,class: 'btn-link' %></td>
 
       </tr>
     <% end %>
