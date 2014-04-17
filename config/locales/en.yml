@@ -31,7 +31,7 @@ en:
     country: "Country"
     city: "City"
     totalcal: "Total Calories"
-<<<<<<< HEAD
+
     totaltime: "Total Time"
     level: "Level"
     totalDistance: "Total Distance"
@@ -39,7 +39,7 @@ en:
     workouts: "Workouts"
     challenges: "Challenges"
     chart: "Chart"
-=======
+
     totalTime: "Total Time"
     level: "Level"
     totalDistance: "Total Distance"
@@ -47,7 +47,7 @@ en:
     workOuts: "Workouts"
     challenges: "Challenges"
     Chart: "Chart"
->>>>>>> FETCH_HEAD
+
     nutrition: "Nutrition (pro)"
     excercise: "Exercise"
     bodymetric: "Body metric"
@@ -71,13 +71,13 @@ en:
     search: "Search"
     listprof: "Listing Profiles"
     newprof: "New Profile"
-<<<<<<< HEAD
+
     proferror: "prohibited this profile from being saved:"
 
     totalprotein: "Total protein"
-=======
+
     totprotein: "Total protein"
->>>>>>> FETCH_HEAD
+
     totalcarb: "Total carbohydrate"
     totalfat: "Total fat"
     editplan: " Editing plan"
@@ -85,7 +85,7 @@ en:
     listplan: "Listing Plans"
     newplan: "New Plan"
     back: "Back"
-<<<<<<< HEAD
+
     plan_err: "prohibited this plan from being saved:"
 
 
@@ -93,38 +93,37 @@ en:
     name: "Name"
     workout_plan_error: "Prohibited this workout_plan from being saved"
     workout_edit: "Editing Workout plan"
-=======
+
 
   workout_plans:
 
     name: "Name"
     workout_plan_error: "Prohibited this workout_plan from being saved"
     workout_title: "Editing Workout plan"
->>>>>>> FETCH_HEAD
+
     list_workout: "Listing workout plans"
     new_workout: "New Workout Plan"
     workout-err: "Prohibited this workout from being saved"
     user_id: "User ID"
     workout_plan_id: "Workout Plan ID"
     date: "Date"
-<<<<<<< HEAD
+
     totalmin: "Total minutes"
 
 
-=======
     dateplace: "Total minutes"
 
     workout:
->>>>>>> FETCH_HEAD
+
 
     editing_workouts: "Editing Workout"
     new_workout: "New Workout"
 
-<<<<<<< HEAD
 
-=======
+
+
     amounttypes:
->>>>>>> FETCH_HEAD
+
 
     amounterror: "Prohibited this amount_type from being saved"
     editamount: "Editing amount type"
@@ -132,12 +131,7 @@ en:
     newamount: "New Amount Type"
     amount_id: "Amount type ID"
     manage_amount: "Manage amount type"
-
-<<<<<<< HEAD
-
-=======
     equipment:
->>>>>>> FETCH_HEAD
 
     equip_error: "Prohibited this equipment from being saved"
     editequip: "Editing equipment"
@@ -145,37 +139,37 @@ en:
     newequip: "New equipment"
     equip: "Equipment"
 
-<<<<<<< HEAD
 
-=======
+
+
     exercises:
->>>>>>> FETCH_HEAD
+
 
      ex_error: "Prohibited this exercise from being saved"
      part: "Part"
      abs: "ABS"
      chest: "Chest"
      back: "Back"
-<<<<<<< HEAD
+
      legs: "Legs"
      arms: "Arms"
      dpw: "Days Per Week"
      basic: "Basic"
-=======
+
      leg: "Legs"
      arms: "Arms"
      dpw: "Days Per Week"
      begin: "Beginner"
->>>>>>> FETCH_HEAD
+
      inter: "Intermediate"
      diff: "Difficult"
      equipid: "Equipment ID"
      descp: "English Description"
-<<<<<<< HEAD
+
      descp_fa: "توضیح فارسی"
-=======
+
      descp_fa: "Farsi Description"
->>>>>>> FETCH_HEAD
+
      vid_link: "Video link"
      avatar: "Ava"
      ex_edit: "Editing exercise"
@@ -183,11 +177,11 @@ en:
      new_ex: "New exercise"
 
 
-<<<<<<< HEAD
 
-=======
+
+
      Food:
->>>>>>> FETCH_HEAD
+
 
      food_err: "Prohibited this food from being saved"
      per: "Per"

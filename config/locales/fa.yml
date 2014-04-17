@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-en:
 
-  profile:
 
-    direction: "style='direction: rtl'"
-    pull: "pull-right"
-=======
+
+
+
 fa:
+
   date:
     abbr_day_names:
     - ی
@@ -206,11 +204,10 @@ fa:
     errors:
       <<: *errors
 
-  profile:
+   profile:
 
-    direction: ""
-    pull: ""
->>>>>>> FETCH_HEAD
+    direction: "style='direction: rtl'"
+    pull: "pull-right"
     age: "سن"
     height: "قد"
     weight: "وزن"
@@ -247,11 +244,13 @@ fa:
     search: "جستجو"
     listprof: "فهرست پروفایل ها"
     newprof: "پروفایل جدید"
-<<<<<<< HEAD
+
+
     proferror: "امکان ذخیره ی این پروفایل وجود ندارد.؛
+
    plans:
-=======
->>>>>>> FETCH_HEAD
+
+
     totprotein: "پروتیین کل"
     totalcarb: "کربوهیدرات کل"
     totalfat: "چربی کل"
@@ -260,31 +259,30 @@ fa:
     listplan: "فهرست برنامه ها"
     newplan: "برنامه ی جدید"
     back: "بازگشت"
-<<<<<<< HEAD
+
     plan_err: "امکان ذخیره ی این برنامه وجود ندارد."
-=======
->>>>>>> FETCH_HEAD
+
 
   workout_plans:
 
     name: "نام"
     workout_plan_error: "امکان ذخیره ی این برنامه ی ورزشی وجود ندارد."
-<<<<<<< HEAD
+
     workout_edit: "تدوین تمرین ورزشی"
-=======
+
     workout_title: "عنوان تمرین ورزشی"
->>>>>>> FETCH_HEAD
+
     list_workout: "فهرست برنامه های ورزشی"
     new_workout: "برنامه ی ورزشی جدید"
     workout-err: "امکان ذخیره ی این ورزش وجود ندارد."
     user_id: "شناسه ی کاربری"
     workout_plan_id: "شناسه ی برنامه ی ورزشی"
     date: "تاریخ"
-<<<<<<< HEAD
+
     totalmin: "مجموع دقایق"
-=======
+
     dateplace: "مجموع دقایق"
->>>>>>> FETCH_HEAD
+
 
     workout:
 
