@@ -1,0 +1,35 @@
+<div class="table-responsive" >
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Friend</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @friendships.each do |friendship| %>
+        <tr>
+          <td><%=image_tag friendship.friend.profile.avatar.url(:thumb) ,{id: friendship.friend.profile.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Profile"}%>
+          <td><%= link_to highlight(friendship.friend.profile.firstname+" "+friendship.friend.profile.lastname+" ("+friendship.friend.email+")" ,friendship.friend.profile.firstname+" "+friendship.friend.profile.lastname,:highlighter => '<strong>\1</strong>') ,friendship.friend.profile  %> </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><%=link_to raw('<span class="glyphicon glyphicon-minus-sign"></span>'), friendship, method: :delete, data: { confirm: 'Are you sure?' }%>
+          </td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
+<%= will_paginate @friendships,:param_name => "friended_page", renderer: BootstrapPagination::Rails %>

@@ -1,0 +1,41 @@
+<h1>Adding Exercises to The Workout Plan</h1>
+
+
+<div class="table-responsive">
+<table class="table table-hover">
+  <thead>
+  <tr>
+    <th>Avatar</th>
+    <th><strong>Part</strong></th>
+    <th>Name</th>
+    <th>Level</th>
+    <th>Equipment</th>
+    <th>Days per week</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @exercises.each do |exercise| %>
+      <tr>
+        <td><%= image_tag exercise.avatar.url(:thumb) ,{id: exercise.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Exercise"}%>
+        <td><strong><%= exercise.part %></strong></td>
+        <td><%= exercise.name.capitalize %></td>
+        <td>
+          <% case exercise.level %>
+          <% when 0%>
+              <%= "Basic" %>
+          <% when 1%>
+              <%= "Intermediate" %>
+          <% when 2%>
+              <%= "Difficult" %>
+          <% end%>
+        </td>
+        <td><%= exercise.equipment.name.capitalize %></td>
+        <td><%= exercise.days_per_week %></td>
+        <td><button class="btn btn-default"> <span class="glyphicon-plus"></span> </button></td>
+    </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

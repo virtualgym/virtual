@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410222411) do
+ActiveRecord::Schema.define(version: 20140414181756) do
 
   create_table "amount_types", force: true do |t|
     t.string   "name"
@@ -76,6 +76,13 @@ ActiveRecord::Schema.define(version: 20140410222411) do
 
   add_index "foods_plans", ["plan_id", "food_id"], name: "index_foods_plans_on_plan_id_and_food_id", using: :btree
 
+  create_table "friendships", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "friend_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "plans", force: true do |t|
     t.integer  "total_cal"
     t.float    "total_protein"
@@ -104,6 +111,7 @@ ActiveRecord::Schema.define(version: 20140410222411) do
     t.string   "cover_content_type"
     t.integer  "cover_file_size"
     t.datetime "cover_updated_at"
+    t.string   "language"
   end
 
   create_table "taking_food_plans", force: true do |t|
@@ -140,8 +148,13 @@ ActiveRecord::Schema.define(version: 20140410222411) do
 
   create_table "workout_plans", force: true do |t|
     t.string   "name"
+    t.string   "difficulty"
+    t.string   "part"
+    t.string   "mode"
+    t.integer  "profile_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.time     "duration"
   end
 
   create_table "workouts", force: true do |t|

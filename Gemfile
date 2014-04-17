@@ -22,7 +22,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+#gem 'turbolinks'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
@@ -35,10 +35,17 @@ group :doc do
 
 end
 
+<<<<<<< HEAD
 gem "paperclip", '~> 3.5.1'#:git => "git://github.com/thoughtbot/paperclip.git"#gem 'rmagick', '2.13.2'
 #----
 #gem 'will_paginate', '~> 3.0'
 #gem 'will_paginate-bootstrap'
+=======
+gem "paperclip", "~> 4.1"
+gem 'rmagick', '2.13.2'
+gem 'will_paginate', '~> 3.0'
+gem 'will_paginate-bootstrap'
+>>>>>>> FETCH_HEAD
 
 #gem 'videojs_rails'
 #gem 'carrierwave'
