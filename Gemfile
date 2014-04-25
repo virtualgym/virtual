@@ -35,6 +35,10 @@ group :doc do
 
 end
 
+gem 'prototype-rails'
+
+#gem 'will_paginate', '~> 3.0'
+#gem 'will_paginate-bootstrap'
 gem "paperclip", "~> 4.1"
 gem 'rmagick', '2.13.2'
 gem 'will_paginate', '~> 3.0'
@@ -42,6 +46,9 @@ gem 'will_paginate-bootstrap'
 
 gem 'videojs_rails'
 gem 'carrierwave'
+
+gem 'font-awesome-less'
+
 
 
 # Use ActiveModel has_secure_password

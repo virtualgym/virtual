@@ -1,0 +1,4 @@
+<% @search_box.each do |profile| %>
+    <li ><%= link_to raw("#{profile.firstname} #{profile.lastname}<br /><span>#{profile.user.email}</span>"),profile ,style: 'color: #808394'%></li>
+<% end %>
+<li><%= link_to raw("More Result <br /><span>Profiles</span>"),profiles_path ,style: 'color: #808394'%></li>

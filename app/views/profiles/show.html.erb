@@ -1,75 +1,56 @@
 
-<p id="notice"><%= notice %></p>
 
-<!--
-<p>
-  <strong>Birthdate:</strong>
-  <%= @profile.birthdate %>
-</p>
+    <div id="alert">
+
+    </div>
 
 
-<p>
-  <strong>Role:</strong>
-  <%= @profile.role %>
-</p>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
--->
-
-    <%= image_tag @profile.cover.url(:medium),{alt: "Cover" , width: "1100" , height: "472" , class: "img-responsive" , id: "mainCover"} %>
+    <%= image_tag @profile.cover.url(:medium),{alt: "Cover" , width: "100%" , height: "472" , class: "img-responsive" , id: "mainCover"} %>
 
   <div class="row">
-    <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-3">
+    <div class="col-md-offset-1 col-md-3 col-sm-offset-1 col-sm-3 col-xs-offset-1 col-xs-3 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
       <%= image_tag @profile.avatar.url(:medium) ,{id:"profilePic" , class: "img-circle img-responsive img-thumbnail" , width: "200" , height: "200" , alt: "Profile"}%>
     </div>
-    <div class="col-md-3 col-sm-3  col-xs-12 infoDiv">
+    <div class="col-md-3 col-sm-3  col-xs-12 infoDiv <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
       <h3> <%= "#{@profile.firstname} #{@profile.lastname}" %> </h3>
       <ul>
-        <li><span class="glyphicon glyphicon-star">  </span> <%= t('profile.age')%> : <%= age(@profile.birthdate) %></li>
-        <li><span class="glyphicon glyphicon-star">  </span> Height : <%= @profile.height %></li>
-        <li><span class="glyphicon glyphicon-star">  </span> weight : <%= @profile.weight %></li>
-        <li><span class="glyphicon glyphicon-star">  </span> Country : <%= @profile.country.capitalize %></li>
-        <li><span class="glyphicon glyphicon-star">  </span> City : <%= @profile.city.capitalize %></li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.age').html_safe %>: <%= age(@profile.birthdate) %></li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.height').html_safe %>: <%= @profile.height %> cm</li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.weight').html_safe %>: <%= @profile.weight %> kg</li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.country').html_safe %>: <%= @profile.country.capitalize %></li>
+        <li><span class="glyphicon glyphicon-star">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.city').html_safe %>: <%= @profile.city.capitalize %></li>
       </ul>
     </div>
-    <div class="col-md-offset-1 col-md-3  col-sm-4 col-xs-12 infoDiv ">
+    <div class="col-md-offset-1 col-md-3  col-sm-4 col-xs-12 infoDiv <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
       <h3>Total</h3>
       <ul>
-        <li><span class="glyphicon glyphicon-fire">  </span>Total Cal: 12,360</li>
-        <li><span class="glyphicon glyphicon-dashboard">  </span>Total Time: 3:30:32</li>
-        <li><span class="glyphicon glyphicon-stats">  </span>Level: easy</li>
-        <li><span class="glyphicon glyphicon-road">  </span>Total Distance: 2.21 km</li>
+        <li><span class="glyphicon glyphicon-fire">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.totalcal').html_safe %>: 12,360</li>
+        <li><span class="glyphicon glyphicon-dashboard">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.totalTime').html_safe %>: 3:30:32</li>
+        <li><span class="glyphicon glyphicon-stats">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.level').html_safe %>: easy</li>
+        <li><span class="glyphicon glyphicon-road">  </span> <%= label_tag t('activemodel.activerecord.attributes.profile.totalDistance').html_safe %>: 2.21 km</li>
       </ul>
     </div>
   </div>
 
-  <div class="row">
-    <% if current_user.profile_id == @profile.id %>
-    <ul class="nav nav-pills nav-justified ">
+    <div class="row" id="profileButtons">
+      <% unless current_user.profile_id == @profile.id %>
 
-      <li class="active"><a href="profile.html">Home</a></li>
-      <li><a href="workout.html">Workouts</a></li>
-      <li><a href="#">Challenges</a></li>
-      <li><a href="#">Chart</a></li>
-      <li><a href="#">Nutrition (PRO)</a></li>
-      <li><%= link_to  "Friends" , profiles_add_friend_path %></li>
+          <div class="btn-group btn-group-lg pull-right">
+            <% unless (current_user.friends.include? @profile.user) %>
+                <%=link_to raw('<i class="fa fa-user"></i> Friend Request'), friendships_path(:friend_id => @profile.user,profile_id: @profile),remote: true , method: :post , class: 'btn btn-primary'%>
+            <% else %>
+                <%=link_to raw('<i class="fa fa-user"></i> Remove'), @friendship, method: :delete, data: { confirm: 'Are you sure?' },remote: true,  class: 'btn btn-primary'%>
+                <!-- <li ><%= link_to 'Private Messages' , new_message_path(to: @profile.user.id) %></li> -->
 
-    </ul>
-    <% else %>
-        <ul class="nav nav-pills nav-justified ">
+            <% end %>
+            <a  data-toggle="modal" data-target="#pm" class="btn btn-info">
+              <i class="fa fa-comment-o"></i>
+            </a>
+          </div>
 
-          <li class="active">
-            <%=
-                unless (current_user.friends.include? @profile.user)
-                  link_to 'Friend Request', friendships_path(:friend_id => @profile.user) , method: :post
-                else
-                  link_to 'Remove Friend', @profile, method: :delete, data: { confirm: 'Are you sure?' }
-                end
-            %></li>
-          <li ><a href="#">Private Message</a></li>
 
-        </ul>
-    <% end%>
-  </div>
+      <% end%>
+
+    </div>
 

@@ -18,131 +18,138 @@
 #
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-
-  profile:
-
-    direction: ""
-    pull: ""
-    age: "Age"
-    height: "Height"
-    weight: "weight"
-    country: "Country"
-    city: "City"
-    totalcal: "Total Calories"
-    totalTime: "Total Time"
-    level: "Level"
-    totalDistance: "Total Distance"
-    home: "Home"
-    workOuts: "Workouts"
-    challenges: "Challenges"
-    Chart: "Chart"
-    nutrition: "Nutrition (pro)"
-    excercise: "Exercise"
-    bodymetric: "Body metric"
-    becomepro: "Become Pro"
-    editprofile: "Edit Profile"
-    logout: "Logout"
-    firstname: "First Name"
-    lastname: "Last Name"
-    profpic: " Profile Picture"
-    coverpic: "Cover Picture"
-    birthdate: "BirthDate"
-    heightplace: "Height (cm)"
-    weightplace: "weight (kg)"
-    edit: "Edit"
-    go: "Go"
-    role: "Role"
-    show: "Show"
-    remove: "Remove"
-    removequest: "Are you sure?"
-    enterplace: "Enter User"
-    search: "Search"
-    listprof: "Listing Profiles"
-    newprof: "New Profile"
-    totprotein: "Total protein"
-    totalcarb: "Total carbohydrate"
-    totalfat: "Total fat"
-    editplan: " Editing plan"
-    create: "Create"
-    listplan: "Listing Plans"
-    newplan: "New Plan"
-    back: "Back"
-
-  workout_plans:
-
-    name: "Name"
-    workout_plan_error: "Prohibited this workout_plan from being saved"
-    workout_title: "Editing Workout plan"
-    list_workout: "Listing workout plans"
-    new_workout: "New Workout Plan"
-    workout-err: "Prohibited this workout from being saved"
-    user_id: "User ID"
-    workout_plan_id: "Workout Plan ID"
-    date: "Date"
-    dateplace: "Total minutes"
-
-    workout:
-
-    editing_workouts: "Editing Workout"
-    new_workout: "New Workout"
-
-    amounttypes:
-
-    amounterror: "Prohibited this amount_type from being saved"
-    editamount: "Editing amount type"
-    listamount: "Listing amount types"
-    newamount: "New Amount Type"
-    amount_id: "Amount type ID"
-    manage_amount: "Manage amount type"
-
-    equipment:
-
-    equip_error: "Prohibited this equipment from being saved"
-    editequip: "Editing equipment"
-    listequip: "Listing equipment"
-    newequip: "New equipment"
-    equip: "Equipment"
-
-    exercises:
-
-     ex_error: "Prohibited this exercise from being saved"
-     part: "Part"
-     abs: "ABS"
-     chest: "Chest"
-     back: "Back"
-     leg: "Legs"
-     arms: "Arms"
-     dpw: "Days Per Week"
-     begin: "Beginner"
-     inter: "Intermediate"
-     diff: "Difficult"
-     equipid: "Equipment ID"
-     descp: "English Description"
-     descp_fa: "Farsi Description"
-     vid_link: "Video link"
-     avatar: "Ava"
-     ex_edit: "Editing exercise"
-     ex_list: "Listing exercises"
-     new_ex: "New exercise"
-
-
-     Food:
-
-     food_err: "Prohibited this food from being saved"
-     per: "Per"
-     protein: "Protein"
-     carb: "Carbohydrate"
-     cal: "calory"
-     fat: "Fat"
-     pic: "Picture"
-     edit_food: "Editing food"
-     food_list: "Listing foods"
-     new_food: "New food"
-
-
-
-
-
-
+ activemodel:
+   activerecord:
+     models:
+      amount_type: 'Amount type'
+      equipment: 'Equipment'
+      exercise: 'Exercise'
+      profile: 'Profile'
+      food: 'Food'
+      friendship: 'Friendship'
+      plan: 'Plan'
+      taking_food_plan: 'Taking food plan'
+      user: 'User'
+      workout: 'Workout'
+      workout_plan: 'Workout plan'
+     attributes:
+      user:
+        remember_me: "remember me"
+      profile:
+        direction: ""
+        pull: ""
+        age: "Age"
+        height: "Height"
+        weight: "weight"
+        inbox: "Inbox"
+        friends: "Friends"
+        language: "Language"
+        country: "Country"
+        city: "City"
+        totalcal: "Total Calories"
+        totalTime: "Total Time"
+        level: "Level"
+        totalDistance: "Total Distance"
+        home: "Home"
+        workouts: "Workouts"
+        challenges: "Challenges"
+        chart: "Chart"
+        nutrition: "Nutrition (pro)"
+        excercise: "Exercise"
+        bodymetric: "Body metric"
+        becomepro: "Become Pro"
+        editprofile: "Edit Profile"
+        logout: "Logout"
+        firstname: "First Name"
+        lastname: "Last Name"
+        profpic: " Profile Picture"
+        coverpic: "Cover Picture"
+        birthdate: "BirthDate"
+        editaccount: "Edit Account"
+        heightplace: "Height (cm)"
+        weightplace: "weight (kg)"
+        edit: "Edit"
+        go: "Go"
+        role: "Role"
+        show: "Show"
+        remove: "Remove"
+        removequest: "Are you sure?"
+        enterplace: "Enter User"
+        search: "Search"
+        listprof: "Listing Profiles"
+        newprof: "New Profile"
+        proferror: "prohibited this profile from being saved:"
+      plan:
+        totalprotein: "Total protein"
+        totalcarb: "Total carbohydrate"
+        totalfat: "Total fat"
+        editplan: " Editing plan"
+        create: "Create"
+        listplan: "Listing Plans"
+        newplan: "New Plan"
+        back: "Back"
+        plan_err: "prohibited this plan from being saved:"
+      workout_plans:
+        name: "Name"
+        workout_plan_error: "Prohibited this workout_plan from being saved"
+        workout_plan_id: "Workout Plan ID"
+        date: "Date"
+        totalmin: "Total minutes"
+        dateplace: "Total minutes"
+      workout:
+        workout_title: "Editing Workout plan"
+        list_workout: "Listing workout plans"
+        new_workout: "New Workout Plan"
+        workout-err: "Prohibited this workout from being saved"
+        user_id: "User ID"
+        editing_workouts: "Editing Workout"
+        new_workout: "New Workout"
+      amounttypes:
+        amounterror: "Prohibited this amount_type from being saved"
+        editamount: "Editing amount type"
+        listamount: "Listing amount types"
+        newamount: "New Amount Type"
+        amount_id: "Amount type ID"
+        manage_amount: "Manage amount type"
+      equipment:
+        equip_error: "Prohibited this equipment from being saved"
+        editequip: "Editing equipment"
+        listequip: "Listing equipment"
+        newequip: "New equipment"
+        equip: "Equipment"
+      exercises:
+        ex_error: "Prohibited this exercise from being saved"
+        part: "Part"
+        abs: "ABS"
+        chest: "Chest"
+        back: "Back"
+        legs: "Legs"
+        arms: "Arms"
+        dpw: "Days Per Week"
+        basic: "Basic"
+        leg: "Legs"
+        arms: "Arms"
+        dpw: "Days Per Week"
+        begin: "Beginner"
+        inter: "Intermediate"
+        diff: "Difficult"
+        equipid: "Equipment ID"
+        descp: "English Description"
+        descp_fa: "Farsi Description"
+        vid_link: "Video link"
+        avatar: "Ava"
+        ex_edit: "Editing exercise"
+        ex_list: "Listing exercises"
+        new_ex: "New exercise"
+      food:
+        food_err: "Prohibited this food from being saved"
+        per: "Per"
+        protein: "Protein"
+        carb: "Carbohydrate"
+        cal: "Calory"
+        fat: "Fat"
+        pic: "Picture"
+        edit_food: "Editing food"
+        food_list: "Listing foods"
+        new_food: "New food"

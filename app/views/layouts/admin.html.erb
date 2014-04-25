@@ -3,18 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <%= stylesheet_link_tag   "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "Video Gallery/html5gallery" , "Flipclock/base" , "Flipclock/flipclock" , "Flipclock/hourlycounter" , "Flipclock/minutecounter" %>
-  <%= stylesheet_link_tag "Flipclock/flipclock" %>
+  <%= stylesheet_link_tag   'application','pnotify.custom.min', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application','pnotify.custom.min','partial/search_layout','SideNavigation/modernizr.custom', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'Video Gallery/html5gallery' , 'Flipclock/base' , 'Flipclock/flipclock' , 'Flipclock/hourlycounter' , 'Flipclock/minutecounter' %>
+  <%= stylesheet_link_tag 'Flipclock/flipclock','SideNavigation/icons','SideNavigation/normalize' , media: 'all' %>
   <title>Profile . Virtual GYM</title>
   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
   <script>var __adobewebfontsappname__="dreamweaver"</script>
   <%= csrf_meta_tag %>
 </head>
 
-<body class="main_body" >
+<body style="background-color: #2e2e2e" <%= t('activemodel.activerecord.attributes.profile.direction').html_safe%> >
+<!-- Added 1 -->
+<div id="st-container" class="st-container">
+<!--
+    example menus
+    these menus will be on top of the push wrapper
+-->
 
+
+
+<nav class="st-menu st-effect-12" id="menu-12">
+  <h2  style="color:
+          #FFF"><i class="fa fa-tasks"></i> Menu</h2>
+  <ul>
+    <li><%= link_to  raw("<i class='fa fa-home fa-2x'></i> #{ t('activemodel.activerecord.attributes.profile.home')}") , controller: "profiles", action: "show", id: current_user.profile_id %></li>
+    <li><%= link_to  raw("<i class='fa fa-envelope fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.inbox') } <span class='badge'>#{@inbox}</span>") ,  :controller => 'messages' , :action => 'inbox' %></li>
+    <li><%= link_to  raw("<i class='fa fa-trophy fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.workouts')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-group fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.friends')}") , profiles_index_friend_path , remote:true %></li>
+    <li><%= link_to  raw("<i class='fa fa-signal fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.chart')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-tachometer fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.challenges')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-cutlery fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.nutrition')}") , "#" %></li>
+<!--
+    <li><%= link_to  raw("<i class='fa fa-flash fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.becomepro')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-cogs fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.editprofile')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-shield fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.editaccount')}") , "#" %></li>
+    <li><%= link_to  raw("<i class='fa fa-power-off fa-2x'></i> #{t('activemodel.activerecord.attributes.profile.logout')}") , "#" %></li> -->
+  </ul>
+</nav>
+
+
+
+<!-- content push wrapper -->
+<div class="st-pusher">
+
+
+  <div class="st-content main_body" ><!-- this is the wrapper for the content -->
+    <div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+      <!-- Top Navigation -->
+      <div class="codrops-top clearfix">
+<!-- /Added 1 -->
 
 
 
@@ -31,18 +69,33 @@
       <a id="khar" class="navbar-brand brand-font" href="#"><span class="glyphicon glyphicon-record">  </span>  Virtual GYM</a>
     </div>
 
+
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
+        <!-- SEARCHBOX -->
 
+        <li id="search_box">
+          <section class="main">
+            <%= form_tag  profiles_path,remote: true,method: 'get' , class: 'search',id: 'body_search',autocomplete: 'off' do %>
+                  <%= text_field_tag :search, params[:search] ,:class => 'form-control ' ,placeholder: 'Search...', id: 'search_input' %>
+                <ul class="results" id="results">
+
+                </ul>
+                </p>
+            <% end %>
+          </section>
+        </li>
+
+        <!-- SEARCHBOX -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-align-justify"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><span class="glyphicon glyphicon-flash">  </span> Excersice</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-road">  </span> Challenge</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-sort-by-attributes">  </span> Body Metric</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-cutlery">  </span> Nutrition</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-flash">  </span> t('profile.exercise') </a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-road">  </span> t('profile.challenges')</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-sort-by-attributes">  </span> t('profile.bodymetric')</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-cutlery">  </span> t('profile.nutrition')</a></li>
           </ul>
         </li>
 
@@ -60,6 +113,7 @@
         </li>
 
         <!-- end Admin Part -->
+
         <% unless current_user.profile_id.nil? %>
         <li > <%= link_to raw("<span class='glyphicon glyphicon-user'></span> #{current_user.profile.firstname.capitalize} "), controller: "profiles", action: "show", id: current_user.profile_id%></li>
         <% end %>
@@ -80,17 +134,88 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+      </div>
+
+      <div class="main clearfix main_body">
+
 <!-- END OF NAVBAR -->
 <div class="mainDiv">
 
 <%= yield %>
 
 </div>
-<script>
-    $(function () {
-        $('.carousel').carousel()
-        $('.nav-tabs a:first').tab('show');
-    });
-</script>
+        <div id="st-trigger-effects" class="column">
+          <button class="fixleft" data-effect="st-effect-12" ><i class='fa fa-th-list fa-2x'></i></button>
+        </div>
+      </div><!-- /main -->
+    </div><!-- /st-content-inner -->
+  </div><!-- /st-content -->
+</div><!-- /st-pusher -->
+</div><!-- /st-container -->
+
+
+<div class="modal fade" id="pm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Message</h4>
+      </div>
+      <div class="modal-body">
+        <% unless @message.nil? || @profile.nil? %>
+        <%= form_for(@message,remote: true,id:'private_message_form') do |f| %>
+            <% if @message.errors.any? %>
+                <div id="error_explanation">
+                  <h2><%= pluralize(@message.errors.count, "error") %> prohibited this message from being saved:</h2>
+
+                  <ul>
+                    <% @message.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                  </ul>
+                </div>
+            <% end %>
+            <%= f.hidden_field :to_id , value: @profile.user.id%>
+            <div class="row">
+              <div class="form-group col-xs-offset-1 col-xs-10 col-sm-12 col-sm-offset-0">
+                <%= f.text_area :content ,:class => 'form-control ',rows: "8", :placeholder => 'Content Of Message'%>
+              </div>
+            </div>
+            <br>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <%= f.submit  "Send Message" , :class => 'btn btn-primary' %>
+            </div>
+        <% end %>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Friend Modal -->
+<div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="FriendModalLabel">Friends</h4>
+      </div>
+      <div class="modal-body" id="modalFriendDiv" style="overflow: auto; max-height: 500px;">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Friend Modal -->
+
+
+<%= javascript_include_tag 'SideNavigation/classie','SideNavigation/sidebarEffects' %>
 </body>
 </html>

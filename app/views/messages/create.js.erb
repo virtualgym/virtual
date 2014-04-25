@@ -1,0 +1,13 @@
+
+$('#pm').modal('toggle');
+
+$(function(){
+    new PNotify({
+        title: 'Done',
+        text: '<%= notice %>',
+        type: 'info',
+        styling: 'fontawesome',
+        icon: 'fa fa-check',
+        hide: true
+    });
+});

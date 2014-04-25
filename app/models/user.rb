@@ -10,4 +10,6 @@ class User < ActiveRecord::Base
   has_many :friendships
   has_many :friends, :through => :friendships
   has_many :inverse_friend ,:through => :friendships
+  has_many :inbox_message , :class_name => 'Message' , :foreign_key => 'to_id'
+  has_many :sent_message , :class_name => 'Message' , :foreign_key => 'from_id'
 end

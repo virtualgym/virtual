@@ -425,3 +425,14 @@
 
   100% {
     opacity: 0; } }
+.flip-clock-wrapper {
+    position: relative;
+}
+.clock {position: relative !important;
+    padding-top: 0px;
+    margin-left: -194px;
+    height:100px;
+    width: 800px;
+/zoom: .6;/
+transform: scale(.54);
+}

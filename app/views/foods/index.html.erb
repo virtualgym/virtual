@@ -1,13 +1,13 @@
-<h1>Listing foods</h1><br>
+<h1>t('profile.food_list')</h1><br>
 
 <br>
 <%= form_tag profiles_path, :method => 'get' , :class => 'form-inline' do %>
     <p>
     <div class="form-group">
-      <%= text_field_tag :search, params[:search] ,:class => 'form-control ' ,:placeholder => "Enter User"%>
+      <%= text_field_tag :search, params[:search] ,:class => 'form-control ' ,:placeholder => t('profile.enterplace')%>
     </div>
     <div class="form-group">
-      <%= submit_tag "Search",:class => 'btn btn-primary ', :name => nil %>
+      <%= submit_tag t('profile.search'),:class => 'btn btn-primary ', :name => nil %>
     </div>
     </p>
 <% end %>
@@ -45,7 +45,7 @@
         <td><%= food.per %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span>Show'), food %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span>Edit'), edit_food_path(food) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), food, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span>Destroy'), food, method: :delete, data: { confirm: t('profile.removequest') } %></td>
       </tr>
     <% end %>
   </tbody>

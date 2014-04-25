@@ -1,7 +1,7 @@
 <%= form_for(@food, :html => { :class => 'form-horizontal' , :role => "form",:multipart => true })   do |f| %>
   <% if @food.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@food.errors.count, "error") %> prohibited this food from being saved:</h2>
+      <h2><%= pluralize(@food.errors.count, "error") %> t('profile.food_err')</h2>
 
       <ul>
       <% @food.errors.full_messages.each do |msg| %>
@@ -25,7 +25,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :amount_type_id ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t('profile.amount_id'),:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.select :amount_type_id , @amount_types.map { |e| [ e.name , e.id ] } ,{}, {:class => 'form-control' } %>
             <%= link_to "manage amount type" , controller: "amount_types" , action: "index"%>
@@ -38,9 +38,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :per ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t('profile.per') ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.text_field :per ,:class => 'form-control ' , :placeholder => 'Per'%>
+            <%= f.text_field :per ,:class => 'form-control ' , :placeholder => t('profile.per')%>
           </div>
         </div>
       </div>
@@ -50,9 +50,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
           <div class="form-group">
-            <%= f.label :calory ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.cal') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.number_field :calory ,:class => 'form-control ', :placeholder => 'Calory'%>
+                <%= f.number_field :calory ,:class => 'form-control ', :placeholder => t('profile.cal')%>
             </div>
           </div>
       </div>
@@ -62,9 +62,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
           <div class="form-group">
-            <%= f.label :protein ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.protein') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.text_field :protein  ,:class => 'form-control ', :placeholder => 'Protein' %>
+                <%= f.text_field :protein  ,:class => 'form-control ', :placeholder => t('profile.protein') %>
             </div>
           </div>
       </div>
@@ -74,9 +74,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
           <div class="form-group">
-            <%= f.label :carbohydrate ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.carb') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.text_field :carbohydrate ,:class => 'form-control ', :placeholder => 'Carbohydrate'%>
+                <%= f.text_field :carbohydrate ,:class => 'form-control ', :placeholder => t('profile.carb')%>
             </div>
           </div>
       </div>
@@ -86,9 +86,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
           <div class="form-group">
-            <%= f.label :fat ,:class => 'col-sm-4 control-label'%>
+            <%= f.label t('profile.fat') ,:class => 'col-sm-4 control-label'%>
             <div class="col-sm-8">
-                <%= f.text_field :fat ,:class => 'form-control ' , :placeholder => 'Fat'%>
+                <%= f.text_field :fat ,:class => 'form-control ' , :placeholder => t('profile.fat')%>
             </div>
           </div>
       </div>
@@ -98,7 +98,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label :Picture ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t('profile.pic') ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.file_field :avatar %>
           </div>

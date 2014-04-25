@@ -1,23 +1,23 @@
 <%= form_for(@profile, :html => { :multipart => true }) do |f| %>
-  <% if @profile.errors.any? %>
-    <div class="alert alert-danger">
-      <h3><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h3>
+    <% if @profile.errors.any? %>
+        <div class="alert alert-danger">
+          <h3><%= pluralize(@profile.errors.count, "error") %> prohibited this profile from being saved:</h3>
 
-      <ul>
-      <% @profile.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+          <ul>
+            <% @profile.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
 
     <br>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :firstname ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.firstname') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.text_field :firstname ,:class => 'form-control ', :placeholder => 'Firstname'%>
           </div>
         </div>
@@ -25,10 +25,10 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :lastname ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.lastname') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.text_field :lastname ,:class => 'form-control ', :placeholder => 'Lastname'%>
           </div>
         </div>
@@ -36,22 +36,21 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :Profile_Picture ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.profpic') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.file_field :avatar %>
-
           </div>
         </div>
       </div>
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :Cover_Picture ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.coverpic') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.file_field :cover %>
           </div>
         </div>
@@ -60,11 +59,11 @@
     <br>
 
     <div class="row">
-      <div class="col-md-7 col-sm-7 col-sx-10">
+      <div class="col-md-7 col-sm-7 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :birthdate ,:class => 'col-sm-3 control-label'%>
-          <div class="col-sm-9">
-            <%= f.date_select :birthdate , {:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' },:start_year => Time.now.year-70, :end_year => Time.now.year}, {:class => 'date-select'}  %>
+          <%= f.label t('activemodel.activerecord.attributes.profile.birthdate') ,:class => "col-sm-3 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-9 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
+            <%= f.date_select :birthdate, {:prompt => { :day => 'Select day', :month => 'Select month', :year => 'Select year' },:start_year => Time.now.year-70, :end_year => Time.now.year}, {:class => 'date-select'}  %>
           </div>
         </div>
       </div>
@@ -72,12 +71,12 @@
 
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :height ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.height') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <div class="input-group">
-              <%= f.text_field :height ,:class => 'form-control ', :placeholder => 'Height (cm)'%>
+              <%= f.text_field :height,:class => 'form-control ', :placeholder => 'Height (cm)'%>
               <span class="input-group-addon">cm</span>
             </div>
           </div>
@@ -86,12 +85,12 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :weight ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.weight') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <div class="input-group">
-                <%= f.text_field :weight ,:class => 'form-control ', :placeholder => 'Weight (kg)'%>
+              <%= f.text_field :weight ,:class => 'form-control ', :placeholder => 'Weight (kg)'%>
               <span class="input-group-addon">kg</span>
             </div>
           </div>
@@ -100,9 +99,9 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :country ,:class => 'col-sm-4 control-label'%>
+          <%= f.label t('activemodel.activerecord.attributes.profile.country') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
           <div class="col-sm-8">
             <%= f.text_field :country ,:class => 'form-control ', :placeholder => 'Country'%>
           </div>
@@ -111,10 +110,10 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :city ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.city'),:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.text_field :city ,:class => 'form-control ', :placeholder => 'City'%>
           </div>
         </div>
@@ -122,10 +121,10 @@
     </div>
     <br>
     <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
+      <div class="col-md-5 col-sm-5 col-sx-10 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
         <div class="form-group">
-          <%= f.label :language ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
+          <%= f.label t('activemodel.activerecord.attributes.profile.language') ,:class => "col-sm-4 control-label #{t('activemodel.activerecord.attributes.profile.pull').html_safe}"%>
+          <div class="col-sm-8 <%= t('activemodel.activerecord.attributes.profile.pull').html_safe %>">
             <%= f.select :language , [['English','en'],['فارسی','fa']] ,{}, {:class => 'form-control' } %>
           </div>
         </div>
@@ -134,10 +133,8 @@
     <br>
     <div class="form-group row">
       <!--<button type="submit" class="btn btn-primary"> Let's Go <span class="glyphicon glyphicon-chevron-right"></span></button>-->
-      <% if :is_edit%>
-        <%= f.submit "Edit" , :class => 'btn btn-info'  %>
-      <%else%>
-          <%= f.submit "Go" , :class => 'btn btn-info'  %>
-      <%end%>
-          </div>
+
+        <%= f.submit  :class => 'btn btn-info'  %>
+
+    </div>
 <% end %>

@@ -1,4 +1,4 @@
-<h1>Listing amount_types</h1><br>
+<h1>t('profile.listamount')</h1><br>
 <%= link_to raw('<span class="glyphicon glyphicon-plus"></span> New'), new_amount_type_path ,:class => "btn btn-info"%><br><br>
 
 
@@ -19,7 +19,7 @@
         <td><%= amount_type.name %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-list-alt"></span> Show'), amount_type %></td>
         <td><%= link_to raw('<span class="glyphicon glyphicon-pencil"></span> Edit'), edit_amount_type_path(amount_type) %></td>
-        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Destroy'), amount_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to raw('<span class="glyphicon glyphicon-remove"></span> Destroy'), amount_type, method: :delete, data: { confirm: t('profile.removequest') } %></td>
 
       </tr>
     <% end %>

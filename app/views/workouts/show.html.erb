@@ -11,6 +11,7 @@
 
   </ul>
   <br>
+  <br>
   <% flash.each do |key, value| %>
       <div class="<%= flash_class(key) %>">
         <%= value %>
@@ -43,7 +44,7 @@
         });
 
         $(document).on('click','#stop', function () {
-            clock.stop();
+            $('.html5gallery-right-0').click();
         });
         $(document).on('click','#start', function () {
             clock.start();
@@ -58,11 +59,27 @@
 
 <div class="row">
   <div class="col-md-4 col-sm-4 col-xs-12">
-    <div class="clock" style="margin:2em;"></div>
+    <div class="well" >
+    <div class="clock " style="margin:2em;"></div>
     <div class="message"></div>
-    <a href="#" id="start">start</a><br>
-    <a href="#" id="stop">stop</a><br>
-    <a href="#" id="reset">reset</a><br>
+      <div class="btn-group btn-group-justified">
+        <a href="#" id="start" class="btn btn-primary" style="color: #ffffff">start</a>
+        <a href="#" id="stop" class="btn btn-info" style="color: #ffffff">stop</a>
+        <a href="#" id="reset" class="btn btn-primary" style="color: #ffffff">reset</a>
+      </div>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        Discriptions
+
+
+      </div>
+      <div class="panel-body">
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+      </div>
+    </div>
   </div>
   <div class="col-md-8  col-sm-8  col-xs-12">
     <div style="display:none;" class="html5gallery" data-responsive="true" data-skin="showcase" data-width="480" data-height="272">

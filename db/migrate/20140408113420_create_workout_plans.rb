@@ -5,7 +5,7 @@ class CreateWorkoutPlans < ActiveRecord::Migration
       t.string :difficulty
       t.string :part
       t.string :mode
-      t.references :profile
+      t.references :user
 
       t.timestamps
     end

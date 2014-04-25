@@ -5,12 +5,18 @@ class ProfilesController < ApplicationController
   # GET /profiles
   # GET /profiles.json
   def index
+    @search_box = Profile.search_friend(params[:search]).paginate(:page => params[:page], :per_page => 5)
     @profiles = Profile.search(params[:search]).paginate(:page => params[:page], :per_page => 10)
   end
 
   # GET /profiles/1
   # GET /profiles/1.json
   def show
+    @message = Message.new
+    conditions = { user_id: current_user.id,
+                   friend_id: @profile.user.id }
+    @friendship = Friendship.find(:first , :conditions => conditions)
+    @inbox = current_user.inbox_message.where('status = 0').count
   end
 
   # GET /profiles/new
@@ -68,6 +74,11 @@ class ProfilesController < ApplicationController
   def add_friend
     @profiles = Profile.search_friend(params[:search]).paginate(:page => params[:page], :per_page => 10)
     @friendships = current_user.friendships.paginate(:page => params[:friended_page], :per_page => 10)
+  end
+
+  def index_friend
+    @friendships = current_user.friendships.paginate(:page => params[:page], :per_page => 5)
+    @count = current_user.friendships.count
   end
 
   private

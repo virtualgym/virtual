@@ -1,4 +1,4 @@
-<h1>Listing workouts</h1><br>
+<h1>t('profile.workout_edit')</h1><br>
 <%= link_to raw('<span class="glyphicon glyphicon-plus"></span> New'), new_workout_path ,:class => "btn btn-info"%><br><br>
 
 
@@ -20,7 +20,7 @@
   <tbody>
     <% @workouts.each do |workout| %>
       <tr>
-        <td><%= workout.user %></td>
+        <td><%= workout.user.email %></td>
         <td><%= workout.workout_plan %></td>
         <td><%= workout.date %></td>
         <td><%= workout.total_min %></td>

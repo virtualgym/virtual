@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Welcome to Virtual GYM</title>
-  <%= stylesheet_link_tag    "application","bootstrap.min", 'custom-login', "custom-profile-master",  media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", 'custom-login',  media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
   <script>var __adobewebfontsappname__="dreamweaver"</script>
@@ -15,10 +15,30 @@
 
 <body>
 <% if notice %>
-    <p class="alert alert-notice"><%= notice %></p>
+<script type="text/javascript">
+    $(function(){
+        new PNotify({
+            title: 'Notice',
+            text: '<%= notice %>',
+            type: 'info',
+            styling: 'fontawesome',
+            icon: 'fa fa-info'
+        });
+    });
+</script>
 <% end %>
 <% if alert %>
-    <p class="alert alert-danger"><%= alert %></p>
+    <script type="text/javascript">
+        $(function(){
+            new PNotify({
+                title: 'Done',
+                text: '<%= alert %>',
+                type: 'error',
+                styling: 'fontawesome',
+                icon: 'fa fa-exclamation'
+            });
+        });
+    </script>
 <% end %>
 <p>&nbsp;</p>
 <header>

@@ -1,7 +1,7 @@
 <%= form_for(@amount_type) do |f| %>
   <% if @amount_type.errors.any? %>
     <div class="alert alert-danger">
-      <h4><%= pluralize(@amount_type.errors.count, "error") %> prohibited this amount_type from being saved:</h4>
+      <h4><%= pluralize(@amount_type.errors.count, "error") %>t ('profile.amounterror'):</h4>
 
       <ul>
       <% @amount_type.errors.full_messages.each do |msg| %>
@@ -12,7 +12,7 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
+    <%= f.label t('profile.name') %><br>
     <%= f.text_field :name ,:class => 'form-control'%>
     <br>
   </div>

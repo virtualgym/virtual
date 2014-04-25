@@ -5,6 +5,13 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_user!
   before_action :set_user_language
 
+  def search_friend
+    @profiles = Profile.search_friend(params[:search])
+    respond_to do |format|
+      format.json { render 'layouts/search_friend' }
+    end
+  end
+
   def after_sign_in_path_for(resource)
     unless resource.profile_id
       "/profiles/new"
@@ -13,9 +20,12 @@ class ApplicationController < ActionController::Base
     end
   end
 
+
+
   private
 
   def set_user_language
     I18n.locale = current_user.profile.language if user_signed_in? && !current_user.profile.nil?
   end
+
 end

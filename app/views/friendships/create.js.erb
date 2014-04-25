@@ -1,0 +1,12 @@
+$(function(){
+    new PNotify({
+        title: 'Congratulation',
+        text: '<%= notice %>',
+        type: 'success',
+        styling: 'fontawesome',
+        icon: 'fa fa-users',
+        hide: true
+    });
+});
+<%@iscreate=true%>
+$('#profileButtons').html("<%=  escape_javascript(render partial: 'profiles/profileButtons')%>")

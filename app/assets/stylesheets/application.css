@@ -10,10 +10,14 @@
  *
 
  *= require_self
-
+*= require SideNavigation/component
+*= require font-awesome
 *= require twitter/bootstrap
+*= require search_box
 *= require ./All/custom-profile-master
 *= require_tree ./All
 
 
  */
+
+
