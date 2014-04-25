@@ -19,7 +19,6 @@
 # To learn more, please read the Rails Internationalization guide
 # available at http://guides.rubyonrails.org/i18n.html.
 en:
-<<<<<<< HEAD
  activemodel:
    activerecord:
      models:
@@ -154,7 +153,6 @@ en:
         edit_food: "Editing food"
         food_list: "Listing foods"
         new_food: "New food"
-=======
 
   profile:
 
@@ -334,4 +332,3 @@ en:
 
 
 
->>>>>>> FETCH_HEAD

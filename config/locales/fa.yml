@@ -1,11 +1,4 @@
-<<<<<<< HEAD
-=======
 
-
-
-
-
->>>>>>> FETCH_HEAD
 fa:
 
   date:
@@ -200,8 +193,6 @@ fa:
       short: ! '%e %B، ساعت %H:%M'
     pm: بعد از ظهر
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
-<<<<<<< HEAD
-=======
   activemodel:
     errors:
       <<: *errors
@@ -350,7 +341,6 @@ fa:
 
      layouts:
 
->>>>>>> FETCH_HEAD
 
   activemodel:
     activerecord:

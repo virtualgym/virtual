@@ -1,77 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="73626383-a1b4-4afe-9abd-1fbbdf9f5b2d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/jquery-1.11.0.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/workouts.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20140408113420_create_workout_plans.rb" afterPath="$PROJECT_DIR$/db/migrate/20140408113420_create_workout_plans.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/amount_types/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/amount_types/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/equipment/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/foods/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/foods/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/plans/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/plans/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout_plans/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/workout_plans/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workouts/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/workouts/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_friended.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_friended.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_friends.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_friends.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/_profiles.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/_profiles.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/admin.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/admin.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/All/custom-profile-master.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/All/custom-profile-master.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/development.log" afterPath="$PROJECT_DIR$/log/development.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/amount_types/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/amount_types/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/equipment/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/foods/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/foods/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/plans/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/plans/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout_plans/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/workout_plans/edit.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workouts/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/workouts/edit.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/fa.yml" afterPath="$PROJECT_DIR$/config/locales/fa.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/Flipclock/flipclock.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/Flipclock/flipclock.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/friendships_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/friendships_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/amount_types/index.html.erb" afterPath="$PROJECT_DIR$/app/views/amount_types/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/index.html.erb" afterPath="$PROJECT_DIR$/app/views/equipment/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/index.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/foods/index.html.erb" afterPath="$PROJECT_DIR$/app/views/foods/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/plans/index.html.erb" afterPath="$PROJECT_DIR$/app/views/plans/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/index.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout_plans/index.html.erb" afterPath="$PROJECT_DIR$/app/views/workout_plans/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workouts/index.html.erb" afterPath="$PROJECT_DIR$/app/views/workouts/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/index.js.erb" afterPath="$PROJECT_DIR$/app/views/profiles/index.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/login.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/login.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/amount_types/new.html.erb" afterPath="$PROJECT_DIR$/app/views/amount_types/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/equipment/new.html.erb" afterPath="$PROJECT_DIR$/app/views/equipment/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exercises/new.html.erb" afterPath="$PROJECT_DIR$/app/views/exercises/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/foods/new.html.erb" afterPath="$PROJECT_DIR$/app/views/foods/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/plans/new.html.erb" afterPath="$PROJECT_DIR$/app/views/plans/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/new.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout_plans/new.html.erb" afterPath="$PROJECT_DIR$/app/views/workout_plans/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workouts/new.html.erb" afterPath="$PROJECT_DIR$/app/views/workouts/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/profiles/show.html.erb" afterPath="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workout_plans/show.html.erb" afterPath="$PROJECT_DIR$/app/views/workout_plans/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/workouts/show.html.erb" afterPath="$PROJECT_DIR$/app/views/workouts/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/signup.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/signup.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/uploaders/video_uploader.rb" afterPath="$PROJECT_DIR$/app/uploaders/video_uploader.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/virtualgym.iml" afterPath="$PROJECT_DIR$/.idea/virtualgym.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
-    <list default="true" id="55998305-20e5-44c3-b883-da19edeafacc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/fa.yml" afterPath="$PROJECT_DIR$/config/locales/fa.yml" />
->>>>>>> FETCH_HEAD
     </list>
     <ignored path="virtualgym.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,9 +14,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/virtualgym@exercise.coverage" NAME="exercise Coverage Results" MODIFIED="1395530292382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/models" MODULE_NAME="virtualgym" />
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -97,154 +26,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
       <file leaf-file-name="create.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/messages/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="9" column="27" selection-start="195" selection-end="215" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
-=======
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/workouts/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2280">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="friendships_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/friendships_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="72" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-=======
-      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/amount_types/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="16" selection-start="394" selection-end="394" vertical-scroll-proportion="0.41501975" vertical-offset="0" max-vertical-offset="506">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="22" selection-start="4191" selection-end="4191" vertical-scroll-proportion="-38.57143" vertical-offset="0" max-vertical-offset="2235">
->>>>>>> FETCH_HEAD
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
       <file leaf-file-name="destroy.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/friendships/destroy.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="17" selection-start="217" selection-end="217" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="255">
-=======
-      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/amount_types/edit.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.2244898" vertical-offset="0" max-vertical-offset="180">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="_profiles.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_profiles.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="11" column="72" selection-start="356" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="675">
-=======
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/amount_types/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="6" selection-start="912" selection-end="912" vertical-scroll-proportion="-7.6530614" vertical-offset="30" max-vertical-offset="555">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
-      <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="73" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.627907" vertical-offset="285" max-vertical-offset="930">
-=======
+            <state line="46" column="73" selection-start="3357" selection-end="3357" vertical-scroll-proportion="-16.875" vertical-offset="285" max-vertical-offset="930">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="en.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="183" column="0" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="3105">
->>>>>>> FETCH_HEAD
+            <state line="334" column="0" selection-start="8231" selection-end="8231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
+      <file leaf-file-name="fa.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="343" column="0" selection-start="7535" selection-end="7535" vertical-scroll-proportion="-2.0044844" vertical-offset="6486" max-vertical-offset="7155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="create.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/friendships/create.js.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="0" selection-start="213" selection-end="231" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="255">
-=======
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="615">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="_profileButtons.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_profileButtons.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="7" column="63" selection-start="521" selection-end="521" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="240">
-=======
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/amount_types/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-<<<<<<< HEAD
       <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="136" column="11" selection-start="7038" selection-end="7038" vertical-scroll-proportion="-85.0" vertical-offset="0" max-vertical-offset="2190">
-=======
-      <file leaf-file-name="fa.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="284" column="0" selection-start="6276" selection-end="6276" vertical-scroll-proportion="0.0" vertical-offset="4755" max-vertical-offset="5310">
->>>>>>> FETCH_HEAD
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="custom-profile-master.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/All/custom-profile-master.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="21" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="821" max-vertical-offset="2235">
-=======
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/amount_types/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="285">
->>>>>>> FETCH_HEAD
               <folding />
             </state>
           </provider>
@@ -263,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/views/messages/_message_list_sent.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/inbox.js.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/inbox.js.rjs" />
@@ -274,17 +139,6 @@
         <option value="$PROJECT_DIR$/app/views/messages/inbox.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/messages/create.rjs" />
-=======
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/foods_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/exercises_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/ajax.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/profiles.js.coffee" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/pagination.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/profiles/index.js.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/partial/pagination.js" />
->>>>>>> FETCH_HEAD
         <option value="$PROJECT_DIR$/app/models/profile.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/search_box.css.scss" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
@@ -296,7 +150,6 @@
         <option value="$PROJECT_DIR$/app/views/profiles/new.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_form.html.erb" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/app/assets/stylesheets/search_box.css" />
         <option value="$PROJECT_DIR$/app/views/profiles/_search_result.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/add_friend.html.erb" />
@@ -309,8 +162,6 @@
         <option value="$PROJECT_DIR$/app/controllers/profiles_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/login.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
-        <option value="$PROJECT_DIR$/config/locales/en.yml" />
-        <option value="$PROJECT_DIR$/config/locales/fa.yml" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/SideNavigation/component.css" />
         <option value="$PROJECT_DIR$/app/views/profiles/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_profiles.html.erb" />
@@ -327,46 +178,14 @@
         <option value="$PROJECT_DIR$/app/views/friendships/destroy.js.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/_profileButtons.html.erb" />
         <option value="$PROJECT_DIR$/app/views/profiles/show.html.erb" />
-=======
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/exercises/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/exercises/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/exercises/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/exercises/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/foods/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/foods/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/foods/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/foods/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/plans/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/plans/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/plans/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/plans/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/profiles/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workout_plans/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workout_plans/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workout_plans/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workout_plans/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workouts/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workouts/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workouts/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/workouts/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/amount_types/edit.html.erb" />
         <option value="$PROJECT_DIR$/config/locales/en.yml" />
         <option value="$PROJECT_DIR$/config/locales/fa.yml" />
->>>>>>> FETCH_HEAD
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="width" value="1280" />
     <option name="height" value="800" />
-=======
-    <option name="x" value="31" />
-    <option name="y" value="22" />
-    <option name="width" value="1246" />
-    <option name="height" value="721" />
->>>>>>> FETCH_HEAD
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -394,11 +213,6 @@
       <sortByType />
     </navigator>
     <panes>
-<<<<<<< HEAD
-=======
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
->>>>>>> FETCH_HEAD
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -413,7 +227,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -429,9 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-=======
-              <option name="myItemId" value="virtual" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,15 +251,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-=======
-              <option name="myItemId" value="virtual" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -463,7 +269,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="virtual" />
+              <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -481,7 +287,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -527,9 +332,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="virtualgym" />
-=======
-              <option name="myItemId" value="virtual" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -551,7 +353,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -621,9 +422,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="virtualgym" />
-=======
-              <option name="myItemId" value="virtual" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -631,15 +429,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="assets" />
-=======
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="amount_types" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,22 +439,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-<<<<<<< HEAD
               <option name="myItemId" value="virtualgym" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-=======
-              <option name="myItemId" value="virtual" />
->>>>>>> FETCH_HEAD
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-<<<<<<< HEAD
             <PATH_ELEMENT>
               <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -770,17 +555,11 @@
       </pane>
       <pane id="Scope" />
       <pane id="RailsProjectView" />
-=======
-          </PATH>
-        </subPane>
-      </pane>
->>>>>>> FETCH_HEAD
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-<<<<<<< HEAD
     <property name="FullScreen" value="true" />
     <property name="options.lastSelected" value="preferences.keymap" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -800,17 +579,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: virtualgym">
-=======
-    <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistory" value="" />
-  </component>
-  <component name="RunManager" selected="Rake.test: virtualgym">
->>>>>>> FETCH_HEAD
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -986,47 +754,53 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="55998305-20e5-44c3-b883-da19edeafacc" name="Default" comment="" />
-      <created>1394447186023</created>
-      <updated>1394447186023</updated>
+      <changelist id="73626383-a1b4-4afe-9abd-1fbbdf9f5b2d" name="Default" comment="" />
+      <created>1397302036451</created>
+      <updated>1397302036451</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="0" y="0" width="1280" height="800" extended-state="6" />
-=======
-    <frame x="31" y="22" width="1246" height="721" extended-state="0" />
->>>>>>> FETCH_HEAD
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38359788" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-=======
->>>>>>> FETCH_HEAD
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34491116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-=======
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32862645" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
->>>>>>> FETCH_HEAD
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1046,11 +820,7 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/search_box.css">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.json.jbuilder">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="64" column="17" selection-start="1667" selection-end="1667" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="2700">
           <folding />
@@ -1062,7 +832,6 @@
         <state line="3" column="76" selection-start="271" selection-end="271" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135" />
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="22" selection-start="163" selection-end="163" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="1695">
@@ -1088,29 +857,16 @@
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456" />
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="623" />
->>>>>>> FETCH_HEAD
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/profiles/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="432">
-=======
-        <state line="13" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="945">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/plans_controller.rb">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/equipment/index.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
           <folding />
@@ -1136,32 +892,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="105">
           <folding />
         </state>
-<<<<<<< HEAD
-=======
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/exercises/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="41" selection-start="3660" selection-end="3660" vertical-scroll-proportion="-5.163265" vertical-offset="1457" max-vertical-offset="1995">
-          <folding>
-            <element signature="e#467#484#0" expanded="true" />
-            <element signature="e#634#651#0" expanded="true" />
-            <element signature="e#844#861#1" expanded="true" />
-            <element signature="e#979#995#0" expanded="true" />
-            <element signature="e#1483#1499#0" expanded="true" />
-            <element signature="e#1818#1836#0" expanded="true" />
-            <element signature="e#1838#1856#0" expanded="true" />
-            <element signature="e#1859#1876#0" expanded="true" />
-            <element signature="e#2112#2132#0" expanded="true" />
-            <element signature="e#2512#2530#0" expanded="true" />
-            <element signature="e#2700#2718#0" expanded="true" />
-            <element signature="e#2911#2932#0" expanded="true" />
-            <element signature="e#3105#3126#0" expanded="true" />
-            <element signature="e#3319#3340#0" expanded="true" />
-            <element signature="e#3641#3660#0" expanded="true" />
-          </folding>
-        </state>
->>>>>>> FETCH_HEAD
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/partial/private_message.js">
@@ -1178,66 +908,7 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_friended.html.erb">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/foods/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="8" selection-start="3786" selection-end="3786" vertical-scroll-proportion="-14.510204" vertical-offset="969" max-vertical-offset="1800">
-          <folding>
-            <element signature="e#895#917#0" expanded="true" />
-            <element signature="e#1396#1412#0" expanded="true" />
-            <element signature="e#1563#1579#0" expanded="true" />
-            <element signature="e#1777#1793#0" expanded="true" />
-            <element signature="e#1954#1970#0" expanded="true" />
-            <element signature="e#2172#2192#0" expanded="true" />
-            <element signature="e#2353#2373#0" expanded="true" />
-            <element signature="e#2576#2593#0" expanded="true" />
-            <element signature="e#2758#2775#0" expanded="true" />
-            <element signature="e#2977#2993#0" expanded="true" />
-            <element signature="e#3150#3166#0" expanded="true" />
-            <element signature="e#3364#3380#0" expanded="true" />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1397729700000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/foods/edit.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="35" selection-start="967" selection-end="1039" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
           <folding />
@@ -1258,48 +929,28 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/profiles_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="16" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1500">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/foods/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="3.7346938" vertical-offset="183" max-vertical-offset="735">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/All/custom-workout.css">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/admin.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3780">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/login_import.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="26" selection-start="400" selection-end="424" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="885">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="525">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/partial/search_layout.js">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/login.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="649" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
           <folding />
@@ -1313,20 +964,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="8" selection-start="1874" selection-end="1901" vertical-scroll-proportion="0.0" vertical-offset="598" max-vertical-offset="2400">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="35" selection-start="5374" selection-end="5374" vertical-scroll-proportion="0.0" vertical-offset="3071" max-vertical-offset="4905">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/SideNavigation/component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="26" column="9" selection-start="286" selection-end="291" vertical-scroll-proportion="-8.692307" vertical-offset="164" max-vertical-offset="8610">
@@ -1334,24 +971,14 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="16" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="552">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/pnotify.custom.min.js">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
           <folding />
@@ -1365,7 +992,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="433">
@@ -1376,57 +1002,32 @@
     <entry file="file://$PROJECT_DIR$/app/views/layouts/login.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="29" selection-start="190" selection-end="190" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="615">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="166" selection-end="166" vertical-scroll-proportion="-4.285714" vertical-offset="0" max-vertical-offset="975">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/pnotify.custom.min.css">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_profiles.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="0" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workout_plans/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="95" selection-start="203" selection-end="203" vertical-scroll-proportion="-0.9183673" vertical-offset="0" max-vertical-offset="405">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/layouts/signup.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="4" selection-start="957" selection-end="1260" vertical-scroll-proportion="-5.3333335" vertical-offset="322" max-vertical-offset="1440">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workout_plans/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="139" selection-end="139" vertical-scroll-proportion="-1.8367347" vertical-offset="0" max-vertical-offset="180">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workout_plans/index.html.erb">
->>>>>>> FETCH_HEAD
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="692">
           <folding>
@@ -1440,7 +1041,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
           <folding>
             <marker date="1394892930000" expanded="true" signature="-1:-1" placeholder="..." />
@@ -1461,27 +1061,17 @@
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index_friend.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
-=======
-        <state line="0" column="28" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="506">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/messages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="46" column="8" selection-start="1171" selection-end="1221" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1230">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workout_plans/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/layouts/admin.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="165" column="48" selection-start="8358" selection-end="8358" vertical-scroll-proportion="-3.08" vertical-offset="2321" max-vertical-offset="3390">
@@ -1492,176 +1082,97 @@
     <entry file="file://$PROJECT_DIR$/app/views/messages/sent.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="23" selection-start="119" selection-end="179" vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="345">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workouts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="112" selection-start="2348" selection-end="2348" vertical-scroll-proportion="-5.9387755" vertical-offset="564" max-vertical-offset="1095">
-          <folding>
-            <element signature="e#522#542#0" expanded="true" />
-            <element signature="e#703#723#0" expanded="true" />
-            <element signature="e#911#939#0" expanded="true" />
-            <element signature="e#1108#1136#0" expanded="true" />
-            <element signature="e#1337#1354#0" expanded="true" />
-            <element signature="e#2122#2143#0" expanded="true" />
-            <element signature="e#2294#2315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/workouts/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="31" selection-start="31" selection-end="31" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="20" selection-start="20" selection-end="70" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="120">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workouts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="163" selection-end="163" vertical-scroll-proportion="2.632653" vertical-offset="159" max-vertical-offset="675">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="151" selection-start="424" selection-end="424" vertical-scroll-proportion="-3.75" vertical-offset="0" max-vertical-offset="375">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workouts/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="529">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/All/custom-profile-master.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="66" column="21" selection-start="2286" selection-end="2286" vertical-scroll-proportion="0.0" vertical-offset="821" max-vertical-offset="2235">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/workouts/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="2280">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/controllers/friendships_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="72" selection-start="1150" selection-end="1150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/amount_types/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="6" selection-start="912" selection-end="912" vertical-scroll-proportion="-7.6530614" vertical-offset="30" max-vertical-offset="555">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="136" column="11" selection-start="7038" selection-end="7038" vertical-scroll-proportion="-85.0" vertical-offset="0" max-vertical-offset="2190">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/amount_types/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="165">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_profiles.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="72" selection-start="356" selection-end="356" vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="675">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/amount_types/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="115" selection-end="115" vertical-scroll-proportion="-1.5306122" vertical-offset="0" max-vertical-offset="285">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/messages/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="27" selection-start="195" selection-end="215" vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="270">
-=======
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="615">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/friendships/create.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="213" selection-end="231" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="255">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/amount_types/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="83" selection-end="83" vertical-scroll-proportion="-1.2244898" vertical-offset="0" max-vertical-offset="180">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/friendships/destroy.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="17" selection-start="217" selection-end="217" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="255">
-=======
-    <entry file="file://$PROJECT_DIR$/app/views/profiles/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="22" selection-start="4191" selection-end="4191" vertical-scroll-proportion="-38.57143" vertical-offset="0" max-vertical-offset="2235">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/_profileButtons.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="63" selection-start="521" selection-end="521" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="240">
-=======
-    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="0" selection-start="3886" selection-end="3886" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3105">
->>>>>>> FETCH_HEAD
           <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/app/views/profiles/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="73" selection-start="3357" selection-end="3357" vertical-scroll-proportion="0.627907" vertical-offset="285" max-vertical-offset="930">
-=======
-    <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="284" column="0" selection-start="6276" selection-end="6276" vertical-scroll-proportion="0.0" vertical-offset="4755" max-vertical-offset="5310">
+        <state line="46" column="73" selection-start="3357" selection-end="3357" vertical-scroll-proportion="-16.875" vertical-offset="285" max-vertical-offset="930">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/amount_types/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="16" selection-start="394" selection-end="394" vertical-scroll-proportion="0.41501975" vertical-offset="0" max-vertical-offset="506">
->>>>>>> FETCH_HEAD
+        <state line="334" column="0" selection-start="8231" selection-end="8231" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5100">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/fa.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="343" column="0" selection-start="7535" selection-end="7535" vertical-scroll-proportion="-2.0044844" vertical-offset="6486" max-vertical-offset="7155">
           <folding />
         </state>
       </provider>
