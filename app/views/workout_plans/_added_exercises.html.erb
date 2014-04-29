@@ -1,0 +1,40 @@
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+    <tr>
+      <th>Avatar</th>
+      <th><strong>Part</strong></th>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Equipment</th>
+      <th>Days per week</th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <% @workout_including.each do |added_plan| %>
+            <tr>
+              <td><%= image_tag added_plan.exercise.avatar.url(:thumb) ,{id: added_plan.exercise.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Exercise"}%>
+              <td><strong><%= added_plan.exercise.part %></strong></td>
+              <td><%= added_plan.exercise.name.capitalize %></td>
+              <td>
+                <% case added_plan.exercise.level %>
+                <% when 0%>
+                    <%= 'Basic' %>
+                <% when 1%>
+                    <%= 'Intermediate' %>
+                <% when 2%>
+                    <%= 'Difficult' %>
+                <% end%>
+              </td>
+              <td><%= added_plan.exercise.equipment.name.capitalize %></td>
+              <td><%= added_plan.exercise.days_per_week %></td>
+              <td class="tmp"><%= link_to raw('<button class="btn btn-primary"> <strong> - </strong> </button>'),
+                              added_plan, method: :delete, data: {confirm: 'Are you sure?'} %>
+              </td>
+            </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>

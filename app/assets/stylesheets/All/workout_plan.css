@@ -1,0 +1,10 @@
+
+.table-responsive thead {
+    background-color: #c4e3f3;
+}
+.table-responsive .btn{
+    border-radius: 20px;
+}
+.table-responsive a:hover{
+    background-color: aliceblue;
+}

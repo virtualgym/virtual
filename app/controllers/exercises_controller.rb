@@ -66,14 +66,19 @@ class ExercisesController < ApplicationController
     end
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_exercise
-      @exercise = Exercise.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def exercise_params
-      params.require(:exercise).permit(:name, :part, :description, :description_fa, :level, :equipment_id, :days_per_week , :video, :avatar)
-    end
+  def add_exercise
+    @exercises = Exercise.search(params[:search])
+  end
+
+  private
+  # Use callbacks to share common setup or constraints between actions.
+  def set_exercise
+    @exercise = Exercise.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def exercise_params
+    params.require(:exercise).permit(:name, :part, :description, :description_fa, :level, :equipment_id, :days_per_week , :video, :avatar)
+  end
 end

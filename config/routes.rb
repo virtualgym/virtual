@@ -1,11 +1,6 @@
 VirtualGym::Application.routes.draw do
 
 
-
-
-  #-- Workout Plan
-  get "workout_plans/add_exercise"
-
   #-- Profile
   get "/profiles/add_friend"
   get "/profiles/index_friend"
@@ -13,8 +8,6 @@ VirtualGym::Application.routes.draw do
   #-- Messages
   get "/messages/inbox"
   get "/messages/sent"
-
-  resources :workout_plans
 
     authenticated :user do
       resources :profiles
@@ -24,10 +17,22 @@ VirtualGym::Application.routes.draw do
     end
 
 
+  resources :workout_plans do
+    member do
+      get :add_exercise
+    end
+  end
 
+  resources :exercises do
+    collection do
+      get :add_exercise
+    end
+  end
 
 
   devise_for :users
+
+  resources :workout_includings
 
   resources :messages
 

@@ -1,3 +1,4 @@
 class WorkoutPlan < ActiveRecord::Base
-  has_and_belongs_to_many :exercises
+  has_many :workout_includings
+  has_many :exercises, :through => :workout_includings
 end

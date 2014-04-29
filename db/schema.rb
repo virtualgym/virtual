@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140419170542) do
+ActiveRecord::Schema.define(version: 20140429074640) do
 
   create_table "amount_types", force: true do |t|
     t.string   "name"
@@ -43,13 +43,6 @@ ActiveRecord::Schema.define(version: 20140419170542) do
   end
 
   add_index "exercises", ["equipment_id"], name: "index_exercises_on_equipment_id", using: :btree
-
-  create_table "exercises_workout_plan", id: false, force: true do |t|
-    t.integer "workout_plan_id"
-    t.integer "exercise_id"
-  end
-
-  add_index "exercises_workout_plan", ["workout_plan_id", "exercise_id"], name: "index_exercises_workout_plan_on_workout_plan_id_and_exercise_id", using: :btree
 
   create_table "foods", force: true do |t|
     t.string   "name"
@@ -158,15 +151,23 @@ ActiveRecord::Schema.define(version: 20140419170542) do
   add_index "users", ["profile_id"], name: "index_users_on_profile_id", using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  create_table "workout_includings", force: true do |t|
+    t.integer  "workout_plan_id"
+    t.integer  "exercise_id"
+    t.time     "duration"
+    t.integer  "reps"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "workout_plans", force: true do |t|
     t.string   "name"
     t.string   "difficulty"
     t.string   "part"
     t.string   "mode"
-    t.integer  "profile_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.time     "duration"
   end
 
   create_table "workouts", force: true do |t|

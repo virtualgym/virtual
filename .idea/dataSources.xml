@@ -6,7 +6,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/virtual_gym_development</jdbc-url>
       <user-name>root</user-name>
-      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <user-password>dffadfcbdfd8dfd9dfcbdf92df9ddf9fdf9c</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails virtualgym: test" uuid="215dfe6a-cf5c-44fa-bbe8-391b1c9d2e44">
