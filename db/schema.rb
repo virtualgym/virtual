@@ -154,7 +154,7 @@ ActiveRecord::Schema.define(version: 20140429074640) do
   create_table "workout_includings", force: true do |t|
     t.integer  "workout_plan_id"
     t.integer  "exercise_id"
-    t.time     "duration"
+    t.integer  "duration"
     t.integer  "reps"
     t.datetime "created_at"
     t.datetime "updated_at"

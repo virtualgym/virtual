@@ -8,6 +8,8 @@
       <th>Level</th>
       <th>Equipment</th>
       <th>Days per week</th>
+      <th>Reps</th>
+      <th>Duration</th>
       <th></th>
     </tr>
     </thead>
@@ -30,6 +32,11 @@
               </td>
               <td><%= added_plan.exercise.equipment.name.capitalize %></td>
               <td><%= added_plan.exercise.days_per_week %></td>
+              <td><%= form_tag(set_fields_workout_including_path(@workout_plan), :method => 'post',
+                               :id => 'form') do %>
+                  <%= text_field_tag "reps_#{added_plan.exercise.id}"  %></td>
+                  <td><%= text_field_tag "duration_#{added_plan.exercise.id}" %>
+                <% end %></td>
               <td class="tmp"><%= link_to raw('<button class="btn btn-primary"> <strong> - </strong> </button>'),
                               added_plan, method: :delete, data: {confirm: 'Are you sure?'} %>
               </td>
@@ -37,4 +44,5 @@
     <% end %>
     </tbody>
   </table>
+  <button class="btn btn-primary" onclick="$('#form').submit();">Add Exercise</button>
 </div>

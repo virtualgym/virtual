@@ -1,7 +1,7 @@
 <%= form_for(@exercise) do |f| %>
   <% if @exercise.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@exercise.errors.count, "error") %> t('profile.ex_error') </h2>
+      <h2><%= pluralize(@exercise.errors.count, "error") %> Add Exercise </h2>
 
       <ul>
       <% @exercise.errors.full_messages.each do |msg| %>
@@ -12,16 +12,13 @@
   <% end %>
 
 
-
-
-
-
+    <br>
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.name') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :name ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.text_field :name ,:class => 'form-control ', :placeholder =>t('profile.name')%>
+            <%= f.text_field :name ,:class => 'form-control ', :placeholder => 'name'%>
           </div>
         </div>
       </div>
@@ -30,9 +27,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.part') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :part ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.select :part, [t('profile.abs') , t ('profile.chest') , t('profile.back') , t('profile.legs') , t('profile.arms')] ,{}, {:class => 'form-control'}%>
+            <%= f.select :part, ['ABS' , 'Chest' , 'Back' , 'Legs' , 'Arms'] ,{}, {:class => 'form-control'}%>
           </div>
         </div>
       </div>
@@ -42,9 +39,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t ('profile.dpw') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label  :days_per_week ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-7">
-            <%= f.number_field :days_per_week ,:class => 'form-control ', :placeholder => t('profile.dpw')%>
+            <%= f.number_field :days_per_week ,:class => 'form-control '%>
           </div>
         </div>
       </div>
@@ -54,9 +51,9 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.level'),:class => 'col-sm-4 control-label'%>
+          <%= f.label :level ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-              <%= f.select :level, [t('profile.basic') ,t('profile.inter') , t('profile.diff')] ,{}, {:class => 'form-control'}%>
+              <%= f.select :level, ['Basic'=> ,'Intermediate'=>1 , 'Difficult'] ,{}, {:class => 'form-control'}%>
             </div>
           </div>
         </div>
@@ -67,7 +64,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.equipid') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :equipment ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.select :equipment_id, @equipments.map { |e| [ e.name , e.id ] } ,{}, {:class => 'form-control' } %>
           </div>
@@ -78,9 +75,20 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.descp') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :description ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
-            <%= f.text_area :description ,:class => 'form-control ',size: "24x6", :placeholder => t('profile.descp')%>
+            <%= f.text_area :description ,:class => 'form-control ',size: "24x6", :placeholder => 'description' %>
+          </div>
+         </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-5 col-sm-5 col-sx-10">
+        <div class="form-group">
+          <%= f.label :description_fa ,:class => 'col-sm-4 control-label'%>
+          <div class="col-sm-8">
+            <%= f.text_area :description_fa ,:class => 'form-control ',size: "24x6", :placeholder => 'description_fa'%>
           </div>
         </div>
       </div>
@@ -89,18 +97,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.descp_fa') ,:class => 'col-sm-4 control-label'%>
-          <div class="col-sm-8">
-            <%= f.text_area :description_fa ,:class => 'form-control ',size: "24x6", :placeholder => t('profile.descp_fa')%>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-md-5 col-sm-5 col-sx-10">
-        <div class="form-group">
-          <%= f.label t('profile.vid_link') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :link ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.file_field :video %>
           </div>
@@ -111,7 +108,7 @@
     <div class="row">
       <div class="col-md-5 col-sm-5 col-sx-10">
         <div class="form-group">
-          <%= f.label t('profile.avatar') ,:class => 'col-sm-4 control-label'%>
+          <%= f.label :avatar ,:class => 'col-sm-4 control-label'%>
           <div class="col-sm-8">
             <%= f.file_field :avatar %>
           </div>

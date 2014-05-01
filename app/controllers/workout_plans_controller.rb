@@ -11,6 +11,7 @@ class WorkoutPlansController < ApplicationController
   # GET /workout_plans/1
   # GET /workout_plans/1.json
   def show
+    @workout_includings = WorkoutIncluding.where(workout_plan_id: @workout_plan.id)
   end
 
   # GET /workout_plans/new
@@ -25,6 +26,7 @@ class WorkoutPlansController < ApplicationController
 
   # GET /workout_plans/1/edit
   def edit
+    @workout_includings = WorkoutIncluding.where(workout_plan_id: @workout_plan.id)
   end
 
   # POST /workout_plans

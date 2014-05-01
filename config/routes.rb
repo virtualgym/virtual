@@ -29,10 +29,13 @@ VirtualGym::Application.routes.draw do
     end
   end
 
+  resources :workout_includings do
+    member do
+      post :set_fields
+    end
+  end
 
   devise_for :users
-
-  resources :workout_includings
 
   resources :messages
 

@@ -4,6 +4,55 @@
   <strong>Name:</strong>
   <%= @workout_plan.name %>
 </p>
+<p>
+  <strong>Part:</strong>
+  <%= @workout_plan.part %>
+</p>
+<p>
+  <strong>Mode:</strong>
+  <%= @workout_plan.mode %>
+</p>
+<br>
+
+<div class="table-responsive" >
+  <table class="table table-hover" id="test">
+    <thead>
+    <tr>
+      <th>Avatar</th>
+      <th><strong>Part</strong></th>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Equipment</th>
+      <th>Days per week</th>
+      <td>Reps</td>
+      <td>Duration</td>
+    </tr>
+    </thead>
+    <tbody>
+    <% @workout_includings.each do |workout_including| %>
+        <tr>
+          <td><%= image_tag workout_including.exercise.avatar.url(:thumb) ,{id: workout_including.exercise.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Exercise"}%>
+          <td><strong><%= workout_including.exercise.part %></strong></td>
+          <td><%= workout_including.exercise.name.capitalize %></td>
+          <td>
+            <% case workout_including.exercise.level %>
+            <% when 0%>
+                <%= 'Basic' %>
+            <% when 1%>
+                <%= 'Intermediate' %>
+            <% when 2%>
+                <%= 'Difficult' %>
+            <% end%>
+          </td>
+          <td><%= workout_including.exercise.equipment.name.capitalize %></td>
+          <td><%= workout_including.exercise.days_per_week %></td>
+          <td><%= workout_including.reps %></td>
+          <td><%= workout_including.duration.seconds %></td>
+        </tr>
+    <% end %>
+    </tbody>
+  </table>
+</div>
 
 <%= link_to 'Edit', edit_workout_plan_path(@workout_plan) %> |
 <%= link_to 'Back', workout_plans_path %>

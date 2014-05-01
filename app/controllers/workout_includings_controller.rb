@@ -1,5 +1,20 @@
 class WorkoutIncludingsController < ApplicationController
 
+  def set_fields
+
+    WorkoutIncluding.where(:workout_plan_id => params[:id]).each do |workout_plan|
+      String repsId = "reps_#{workout_plan.exercise_id}"
+      String durationId = "duration_#{workout_plan.exercise_id}"
+      workout_plan.reps = params[repsId]
+      workout_plan.duration = params[durationId]
+      workout_plan.save
+    end
+    respond_to do |format|
+        format.html{ redirect_to workout_plan_path(params[:id])}
+      end
+  end
+
+
   def create
     @workout_include = WorkoutIncluding.new
     @workout_include.exercise_id = params[:exercise_id]
