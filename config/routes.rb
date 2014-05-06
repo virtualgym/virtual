@@ -21,6 +21,9 @@ VirtualGym::Application.routes.draw do
     member do
       get :add_exercise
     end
+    member do
+      post :sort
+    end
   end
 
   resources :exercises do

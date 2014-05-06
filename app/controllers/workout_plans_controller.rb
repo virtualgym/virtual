@@ -19,6 +19,17 @@ class WorkoutPlansController < ApplicationController
     @workout_plan = WorkoutPlan.new
   end
 
+  # For sortable Rows in add_exercise table
+  def sort
+    @workout_plan = WorkoutPlan.find(params[:id])
+    @workout_plan.exercises.each_with_index do |id,index|
+      @workout_plan.exercises.update_all(['position=?', index+1], ['id=?', id])
+    end
+    render :nothing => true
+  end
+
+
+
   def add_exercise
     @exercises = Exercise.where(part: @workout_plan.part)
     @workout_including = WorkoutIncluding.where(workout_plan_id: @workout_plan.id)

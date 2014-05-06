@@ -15,7 +15,6 @@
 <% end %>
 <br>
 
-
 <div id="exercises">
     <%= render partial: 'exercises'%>
 </div>
@@ -23,9 +22,36 @@
 <br>
 <br>
 
-<div id="addedExercises">
-  <%= render partial: 'added_exercises'%>
+<!--<div id="added_exercises">
+</div>-->
+<div id="all_exercises" class="table-responsive">
+  <%= form_tag(set_fields_workout_including_path(@workout_plan.id), :method => 'post',
+               :id => 'form') do %>
+  <table id="sortable" class="table table-hover">
+    <thead>
+    <tr>
+      <th>Drag</th>
+      <th>Avatar</th>
+      <th><strong>Part</strong></th>
+      <th>Name</th>
+      <th>Level</th>
+      <th>Equipment</th>
+      <th>Days per week</th>
+      <th>Reps</th>
+      <th>Duration</th>
+      <th></th>
+    </tr>
+    </thead>
+
+    <tbody id="added_exercises">
+    </tbody>
+  </table>
+  <% end %>
+  <button class="btn btn-primary" onclick="$('#form').submit();">Add Exercises</button>
+  <!-- render partial: 'added_exercises'%>-->
 </div>
+<!-- sortable_element('add_exercises', :url => {:controller => 'workout_plans', :action => 'sort', :id => @workout_plan.id }, :handle => 'handle') %>-->
+
 <br>
 
   <!--# link_to 'Add', new_workout_plans_path(@workout_plan.id) %>-->

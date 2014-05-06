@@ -1,7 +1,7 @@
-<div class="table-responsive">
-  <table class="table table-hover">
+<table class="table table-hover">
     <thead>
     <tr>
+      <th></th>
       <th>Avatar</th>
       <th><strong>Part</strong></th>
       <th>Name</th>
@@ -16,7 +16,9 @@
 
     <tbody>
     <% @workout_including.each do |added_plan| %>
-            <tr>
+        <!%# content_tag_for(:tr, added_plan.exercise.id) do %>
+            <tr id="tr_added_plan.exercise.id%>">
+            <td><span class="handle"> [Drag]</span></td>
               <td><%= image_tag added_plan.exercise.avatar.url(:thumb) ,{id: added_plan.exercise.id , class: "img-circle img-responsive img-thumbnail" , width: "100" , height: "100" , alt: "Exercise"}%>
               <td><strong><%= added_plan.exercise.part %></strong></td>
               <td><%= added_plan.exercise.name.capitalize %></td>
@@ -40,9 +42,8 @@
               <td class="tmp"><%= link_to raw('<button class="btn btn-primary"> <strong> - </strong> </button>'),
                               added_plan, method: :delete, data: {confirm: 'Are you sure?'} %>
               </td>
-            </tr>
-    <% end %>
+    </tr>
+        <% end %>
     </tbody>
   </table>
-  <button class="btn btn-primary" onclick="$('#form').submit();">Add Exercise</button>
-</div>
+  <button class="btn btn-primary" onclick="$('#form').submit();">Add Exercises</button>

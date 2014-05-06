@@ -27,13 +27,13 @@
                 <%= 'Intermediate' %>
             <% when 2%>
                 <%= 'Difficult' %>
-            <% end%>
+            <% end %>
           </td>
           <td><%= exercise.equipment.name.capitalize %></td>
           <td><%= exercise.days_per_week %></td>
           <td><%=link_to raw('<button class="btn btn-primary"> <strong>+</strong> </button>'),
                  workout_includings_path(:workout_plan_id => @workout_plan.id, :exercise_id => exercise.id),
-                 method: :post %>
+                 method: :post, remote: true %>
           </td>
         </tr>
     <% end %>
